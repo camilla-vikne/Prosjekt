@@ -1,0 +1,97 @@
+/* Design elements:
+Pink: F37063
+Black: 000000
+White: ffffff
+Grey border: 9c9c9c
+Input border radius: 33 px
+*/
+
+/*Camilla log 29.11.23: Satt foreløbig størrelse på input fields. 
+Datofeltet må fikses, vurderer å sette inn en annen
+kalender som lar deg velge dato og tid bedre.
+Divene må settes i riktig størrelse, og må begynne
+å jobbe i MQ. Må også sette inn fonter. 
+*/
+* {
+  margin: 0;
+}
+.header {
+  background-color: black;
+  height: 90px;
+  width: 100vw;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  margin: auto 0px auto 0px;
+}
+.nav-items {
+  margin: auto 0px auto 0px;
+}
+.nav-items ul li {
+  list-style-type: none;
+  display: inline;
+  padding-right: 20px;
+}
+.booking-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 10px;
+  grid-template-areas: "left right";
+  padding: 30px;
+}
+.container-left {
+  grid-area: left;
+  width: 50rem;
+}
+.headline {
+  line-break: break;
+  margin: 20px 0px 20px 0px;
+}
+label {
+  font-size: 18px;
+  margin: 10px;
+}
+input {
+  height: 30px;
+  width: 350px;
+  border: 2px solid #9c9c9c;
+  border-radius: 33px;
+  margin: 5px 0px 5px 0px;
+}
+.twin-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.peoplepicker {
+  margin-right: 45px;
+}
+#date,
+#people {
+  width: 150px;
+}
+#other {
+  height: 100px;
+}
+button {
+  height: max-content;
+  width: max-content;
+  border-radius: 33px;
+  padding: 10px;
+  background-color: #f37063;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+.container-right {
+  grid-area: right;
+  width: 50rem;
+}
+img {
+  height: 289px;
+  width: 633px;
+  object-fit: cover;
+}

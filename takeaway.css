@@ -1,0 +1,80 @@
+/* Design elements:
+Pink: F37063
+Black: 000000
+White: ffffff
+Grey border: 9c9c9c
+Input border radius: 33 px
+*/
+* {
+  margin: 0;
+}
+.header {
+  background-color: black;
+  height: 90px;
+  width: 100vw;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  margin: auto 0px auto 0px;
+}
+.nav-items {
+  margin: auto 0px auto 0px;
+}
+.nav-items ul li {
+  list-style-type: none;
+  display: inline;
+  padding-right: 20px;
+}
+input {
+  height: 20px;
+}
+
+
+/* Andreas food items */
+
+.right-title {
+  background-color: black;
+}
+
+#right-title-text {
+  color: white;
+}
+
+.takeaway-menu {
+  border: solid 1px black;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px
+}
+
+.takeaway-items-inline {
+  display: flex;
+  justify-content: space-between;
+}
+
+.increment-btn {
+  background-color: #F37063;
+  color: white;
+  border-radius: 5px;
+}
+
+.order-btn {
+  background-color: #F37063;
+  color: white;
+  border-radius: 5px;
+}
+
+.poke-menu-item {
+  border: solid 1px black;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  max-width: 100px
+}
+
+.poke-btns {
+  display: flex;
+  justify-content: space-between;
+}
