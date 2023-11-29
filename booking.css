@@ -1,0 +1,21 @@
+/* Design elements:
+Pink: F37063
+Black: 000000
+White: ffffff
+Grey border: 9c9c9c
+Input border radius: 33 px
+*/
+.header {
+  background-color: black;
+  height: 90px;
+  width: 100vw;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+.nav-items ul li {
+  list-style-type: none;
+  display: inline;
+  padding-right: 20px;
+  padding-top: 50px;
+}
