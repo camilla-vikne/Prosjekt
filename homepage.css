@@ -1,5 +1,3 @@
-
-
 body {
   margin: 0;
   padding: 0;
@@ -12,12 +10,10 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
 }
 
 header {
   background: black;
-
 }
 
 .logoSection {
@@ -37,7 +33,6 @@ nav {
   height: 79px;
   line-height: 79px;
 }
-
 
 nav ul {
   margin: 0;
@@ -62,7 +57,7 @@ nav a {
 }
 
 nav a::before {
-  content: '';
+  content: "";
   display: block;
   height: 5px;
   width: 0%;
@@ -104,9 +99,8 @@ nav a:hover::before {
   justify-content: end;
   width: 80%;
   top: 85%;
-  left:50%;
+  left: 50%;
   transform: translate(-50%, -50%);
-  
 }
 
 .headerBtn button {
@@ -116,18 +110,17 @@ nav a:hover::before {
   border-radius: 500px;
   border: none;
   font-size: 20px;
-
 }
 
 .headerBtn #menuBtn {
-  background-color: #F37063;
+  background-color: #f37063;
   color: white;
 }
 
 .arrowDown {
   position: absolute;
   top: 97%;
-  left:50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   border: none;
   background: rgba(0, 0, 0, 0);
@@ -172,8 +165,6 @@ nav a:hover::before {
   height: 77px;
   background-color: black;
   top: 50%;
-  left:50%;
+  left: 50%;
   transform: translate(-50%, -50%);
-
 }
-

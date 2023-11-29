@@ -1,69 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--/* Kristian 29.11.2023 Laget Nav bar med logo og tekst, brukt flexbox og liste for menu itemsene. Begynt på header med bilde og tekst. Har og nå gjort opening times delen. 
+  <!--/* Kristian 29.11.2023 Laget Nav bar med logo og tekst, brukt flexbox og liste for menu itemsene. Begynt på header med bilde og tekst. Har og nå gjort opening times delen. 
 */-->
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./homepage.css" />
-  <script src="./script.js" defer></script>
-  <title>Document</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./homepage.css" />
+    <script src="./script.js" defer></script>
+    <title>Document</title>
+  </head>
 
-<body>
-
-  <header>
-    <div class="navContainer">
-      <div class="logoSection">
-        <img src="./Bilder/Homepage/logo .svg" alt="Logo of two chopsticks grabbing a sushi roll" class="logo">
-        <h1>LOGO</h1>
+  <body>
+    <header>
+      <div class="navContainer">
+        <div class="logoSection">
+          <img
+            src="./Bilder/Homepage/logo .svg"
+            alt="Logo of two chopsticks grabbing a sushi roll"
+            class="logo"
+          />
+          <h1>LOGO</h1>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="./menu.html">Our menu</a></li>
+            <li><a href="">About us</a></li>
+            <li><a href="./booking.html">Booking</a></li>
+            <li><a href="./takeaway.html">Take-away</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav>
-        <ul>
-          <li><a href="./menu.html">Our menu</a></li>
-          <li><a href="">About us</a></li>
-          <li><a href="./booking.html">Booking</a></li>
-          <li><a href="./takeaway.html">Take-away</a></li>
-        </ul>
-      </nav>
+    </header>
+
+    <div class="headerSection">
+      <div class="headerImg">
+        <img
+          src="./Bilder/Homepage/Header img.jpg"
+          alt="Image of a sushi held up by some chopsticks against a black background."
+        />
+      </div>
+      <h5>Enter the wonderful world of sushi with (insert company name)</h5>
+      <div class="headerBtn">
+        <button>Book now!</button>
+        <button id="menuBtn">See our menu</button>
+      </div>
+      <button class="arrowDown">
+        <img
+          src="./Bilder/Homepage/arrow-down.svg"
+          alt="A white arrow facing downwards. Clickable."
+        />
+      </button>
     </div>
-</header>
 
-<div class="headerSection">
-  <div class="headerImg">
-    <img src="./Bilder/Homepage/Header img.jpg" alt="Image of a sushi held up by some chopsticks against a black background.">
-  </div>
-  <h5>Enter the wonderful world of sushi with 
-    (insert company name)</h5>
-  <div class="headerBtn">
-    <button>Book now!</button>
-    <button id="menuBtn">See our menu</button>
-  </div>
-  <button class="arrowDown"><img src="./Bilder/Homepage/arrow-down.svg" alt="A white arrow facing downwards. Clickable."></button>
-</div>
-
-<div class="breakContainer">
-  <div class="breakSection">
-    <div class="openingTimeSection">
-      <h2>Opening Times</h2>
-      <ul>
-        <li>Monday - Friday: 14:00 - 23:00</li><br>
-        <li>Saturday: 16:00 - 0:00</li><br>
-        <li>Sunday: 15:00 - 23:00</li>
-      </ul>
+    <div class="breakContainer">
+      <div class="breakSection">
+        <div class="openingTimeSection">
+          <h2>Opening Times</h2>
+          <ul>
+            <li>Monday - Friday: 14:00 - 23:00</li>
+            <br />
+            <li>Saturday: 16:00 - 0:00</li>
+            <br />
+            <li>Sunday: 15:00 - 23:00</li>
+          </ul>
+        </div>
+        <div class="localeSection">
+          <h2>Locale</h2>
+          <p>
+            Welcome to [Your Restaurant Name], where culinary artistry meets
+            serene ambience. Nestled in the heart of [City], our sushi haven
+            invites you to indulge in a sensory experience like no other.<br /><br />
+            For those who savor al fresco dining, our outdoor seating option
+            lets you relish your favorite sushi creations under the open sky.
+          </p>
+        </div>
+      </div>
+      <div class="lineBlack"></div>
     </div>
-    <div class="localeSection">
-      <h2>Locale</h2>
-      <p>Welcome to [Your Restaurant Name], where culinary artistry meets serene ambience. Nestled in the heart of [City], our sushi haven invites you to indulge in a sensory experience like no other.<br><br> For those who savor al fresco dining, our outdoor seating option lets you relish your favorite sushi creations under the open sky.</p>
-    </div>
-  </div>
-  <div class="lineBlack"></div>
-</div>  
-
-
-</body>
-
+  </body>
 </html>
