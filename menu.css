@@ -26,3 +26,10 @@ h1 {
     border-radius: 10px;
     padding: 10px;
 }
+
+.poke_items {
+    border: solid 1px black;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
