@@ -1,0 +1,35 @@
+.header {
+    height: 80px;
+    width: 100vw;
+    background-color: black;
+}
+
+.menu_title{
+    height: 50px;
+    width: 100vw;
+    background-color: black;
+    margin: 20px 0px;
+}
+
+h1 {
+    color: white;
+}
+
+.maki_menu {
+    border: solid 1px black;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.maki_item {
+    border: solid 1px black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.poke_items {
+    border: solid 1px black;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
