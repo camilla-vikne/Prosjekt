@@ -30,3 +30,51 @@ Input border radius: 33 px
 input {
   height: 20px;
 }
+
+
+/* Andreas food items */
+
+.right-title {
+  background-color: black;
+}
+
+#right-title-text {
+  color: white;
+}
+
+.takeaway-menu {
+  border: solid 1px black;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px
+}
+
+.takeaway-items-inline {
+  display: flex;
+  justify-content: space-between;
+}
+
+.increment-btn {
+  background-color: #F37063;
+  color: white;
+  border-radius: 5px;
+}
+
+.order-btn {
+  background-color: #F37063;
+  color: white;
+  border-radius: 5px;
+}
+
+.poke-menu-item {
+  border: solid 1px black;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  max-width: 100px
+}
+
+.poke-btns {
+  display: flex;
+  justify-content: space-between;
+}
