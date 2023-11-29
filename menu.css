@@ -1,35 +1,60 @@
-.header {
-    height: 80px;
-    width: 100vw;
-    background-color: black;
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-family: "Orbitron", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Tilt Neon", sans-serif;
+  margin: auto;
 }
 
-.menu_title{
-    height: 50px;
-    width: 100vw;
-    background-color: black;
-    margin: 20px 0px;
+.header {
+  height: 80px;
+  width: 100vw;
+  background-color: black;
+}
+
+.menu_title {
+  height: 50px;
+  width: 100vw;
+  background-color: black;
+  margin: 20px 0px;
 }
 
 h1 {
-    color: white;
+  color: white;
+  text-align: center;
+}
+
+.california {
+  padding: 0px;
 }
 
 .maki_menu {
-    border: solid 1px black;
-    border-radius: 10px;
-    padding: 20px;
+  border: solid 1px black;
+  border-radius: 10px;
+  margin: 30px;
 }
 
 .maki_item {
-    border: solid 1px black;
-    border-radius: 10px;
-    padding: 10px;
+  border: solid 1px black;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 0px 10px;
+}
+
+/* .maki_items_inline {
+    display: flex;
+    justify-content: space-between;
+} */
+
+.poke_menu {
+  display: flex;
+  flex-flow: row wrap;
 }
 
 .poke_items {
-    border: solid 1px black;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 10px;
+  border: solid 1px black;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 30px;
+  max-width: 150px;
 }
