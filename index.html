@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!--/* Kristian 29.11.2023 Laget Nav bar med logo og tekst, brukt flexbox og liste for menu itemsene. Begynt på header med bilde og tekst. Har og nå gjort opening times delen. 
+*/-->
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -39,10 +40,28 @@
     (insert company name)</h5>
   <div class="headerBtn">
     <button>Book now!</button>
-    <button>See our menu</button>
+    <button id="menuBtn">See our menu</button>
   </div>
-  <button><img src="./Bilder/Homepage/arrow-down.svg" alt="A white arrow facing downwards. Clickable."></button>
+  <button class="arrowDown"><img src="./Bilder/Homepage/arrow-down.svg" alt="A white arrow facing downwards. Clickable."></button>
 </div>
+
+<div class="breakContainer">
+  <div class="breakSection">
+    <div class="openingTimeSection">
+      <h2>Opening Times</h2>
+      <ul>
+        <li>Monday - Friday: 14:00 - 23:00</li><br>
+        <li>Saturday: 16:00 - 0:00</li><br>
+        <li>Sunday: 15:00 - 23:00</li>
+      </ul>
+    </div>
+    <div class="localeSection">
+      <h2>Locale</h2>
+      <p>Welcome to [Your Restaurant Name], where culinary artistry meets serene ambience. Nestled in the heart of [City], our sushi haven invites you to indulge in a sensory experience like no other.<br><br> For those who savor al fresco dining, our outdoor seating option lets you relish your favorite sushi creations under the open sky.</p>
+    </div>
+  </div>
+  <div class="lineBlack"></div>
+</div>  
 
 
 </body>
