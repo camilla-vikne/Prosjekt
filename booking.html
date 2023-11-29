@@ -25,51 +25,55 @@
             </ul>
         </div>
     </div>
-    <div class="container-left">
-        <div class="headline">
-            <h1>Book a table and see what all the fuss is about</h1>
-        </div>
-        <form action="" class="booking">
-            <label for="name">Name on the booking</label>
-            <br>
-            <input type="text" id="name">
-            <br>
-            <label for="email">Email address</label>
-            <br>
-            <input type="email" name="email" id="">
-            <br>
-            <label for="phone">Phone number</label>
-            <br>
-            <input type="tel" name="phone" id="" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
-            <br>
-            <div class="twin-form">
-                <label for="people">How many?</label>
-                <input type="number" name="people" id="">
-                <br>
-                <label for="date">Date</label>
-                <input type="date" id="date" name="date" value="2023-11-29" min="2023-11-01" max="2024-03-01" />
-                <input type="time" id="time" name="time" min="09:00" step="900" required>
-
+    <div class="booking-container">
+        <div class="container-left">
+            <div class="headline">
+                <h1>Book a table and see what all the fuss is about</h1>
             </div>
+            <form action="" class="booking">
+                <label for="name">Name on the booking</label>
+                <br>
+                <input type="text" id="name">
+                <br>
+                <label for="email">Email address</label>
+                <br>
+                <input type="email" name="email" id="">
+                <br>
+                <label for="phone">Phone number</label>
+                <br>
+                <input type="tel" name="phone" id="" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                <br>
+                <div class="twin-form">
+                    <label for="people">How many?</label>
+                    <br>
+                    <input type="number" name="people" id="people">
+                    <br>
+                    <label for="date">Date</label>
+                    <br>
+                    <input type="date" id="date" name="date" value="2023-11-29" min="2023-11-01" max="2024-03-01" />
 
-            <br>
-            <label for="other">Other (allergies, questions etc)</label>
-            <br>
-            <input type="text" name="other" id="">
-            <br>
-            <button type="submit">Place booking</button>
-        </form>
 
-    </div>
-    <div class="container-right">
-        <div class="image-container">
-            <img src="./Bilder/geraldine-lewa-axgXb6_Tz3I-unsplash.jpg" alt="" srcset="">
+                </div>
+
+                <br>
+                <label for="other">Other (allergies, questions etc)</label>
+                <br>
+                <input type="text" name="other" id="">
+                <br>
+                <button type="submit">Place booking</button>
+            </form>
+
         </div>
-        <div class="text-container">
-            <p>Indulge in an exquisite sushi experience by securing your table at NAME.
-                Our culinary experts await to delight your palate with the finest selection
-                of fresh, handcrafted sushi.
-            </p>
+        <div class="container-right">
+            <div class="image-container">
+                <img src="./Bilder/geraldine-lewa-axgXb6_Tz3I-unsplash.jpg" alt="" srcset="">
+            </div>
+            <div class="text-container">
+                <p>Indulge in an exquisite sushi experience by securing your table at NAME.
+                    Our culinary experts await to delight your palate with the finest selection
+                    of fresh, handcrafted sushi.
+                </p>
+            </div>
         </div>
     </div>
 </body>
