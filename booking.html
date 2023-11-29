@@ -1,3 +1,10 @@
+<!--/*Camilla log 29.11.23: Satt foreløbig størrelse på input fields. 
+Datofeltet må fikses, vurderer å sette inn en annen
+kalender som lar deg velge dato og tid bedre.
+Divene må settes i riktig størrelse, og må begynne
+å jobbe i MQ. Må også sette inn fonter. 
+*/-->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -44,13 +51,16 @@
                 <input type="tel" name="phone" id="" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
                 <br>
                 <div class="twin-form">
-                    <label for="people">How many?</label>
-                    <br>
-                    <input type="number" name="people" id="people">
-                    <br>
-                    <label for="date">Date</label>
-                    <br>
-                    <input type="date" id="date" name="date" value="2023-11-29" min="2023-11-01" max="2024-03-01" />
+                    <div class="peoplepicker">
+                        <label for="people">How many?</label>
+                        <br>
+                        <input type="number" name="people" id="people">
+                    </div>
+                    <div class="datepicker">
+                        <label for="date">Date</label>
+                        <br>
+                        <input type="date" id="date" name="date" value="2023-11-29" min="2023-11-01" max="2024-03-01" />
+                    </div>
 
 
                 </div>
@@ -58,9 +68,10 @@
                 <br>
                 <label for="other">Other (allergies, questions etc)</label>
                 <br>
-                <input type="text" name="other" id="">
+                <input type="text" name="other" id="other">
                 <br>
-                <button type="submit">Place booking</button>
+                <br>
+                <button type="submit"> Place booking </button>
             </form>
 
         </div>

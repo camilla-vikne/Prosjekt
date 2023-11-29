@@ -5,6 +5,13 @@ White: ffffff
 Grey border: 9c9c9c
 Input border radius: 33 px
 */
+
+/*Camilla log 29.11.23: Satt foreløbig størrelse på input fields. 
+Datofeltet må fikses, vurderer å sette inn en annen
+kalender som lar deg velge dato og tid bedre.
+Divene må settes i riktig størrelse, og må begynne
+å jobbe i MQ. Må også sette inn fonter. 
+*/
 * {
   margin: 0;
 }
