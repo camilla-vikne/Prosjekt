@@ -38,11 +38,11 @@ Divene må settes i riktig størrelse, og må begynne
 }
 .booking-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 5px 1fr;
   grid-template-rows: 1fr;
-  grid-template-areas: "left right";
+  gap: 0px 0px;
+  grid-template-areas: "left spacer right";
   padding: 30px;
-  gap: 10px;
   justify-items: center;
 }
 .container-left {
@@ -91,6 +91,14 @@ button {
   font-weight: bold;
   font-size: 18px;
 }
+.spacer {
+  grid-area: spacer;
+  width: 3px;
+  height: 200px;
+  background-color: black;
+  border-radius: 50px;
+  align-self: center;
+}
 .container-right {
   grid-area: right;
   display: flex;
@@ -107,4 +115,63 @@ img {
   width: 30rem;
   font-family: "Josefin sans";
   font-size: 1.5rem;
+}
+@media screen and (max-width: 380px) {
+  .booking-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 5px 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "left"
+      "spacer"
+      "right";
+    padding: 10px;
+    align-items: center;
+  }
+  .container-left {
+    margin-bottom: 2rem;
+  }
+  h1 {
+    font-size: x-large;
+    margin-bottom: 2rem;
+  }
+  label {
+    font-size: medium;
+  }
+  input {
+    height: 1.5rem;
+    width: 17rem;
+  }
+  .twin-form {
+    gap: 2.8rem;
+  }
+
+  input#people,
+  #date {
+    width: 7rem;
+  }
+  #other {
+    height: 4rem;
+  }
+
+  .spacer {
+    height: 3px;
+    width: 200px;
+  }
+  .container-right {
+    grid-area: right;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  img {
+    height: 15rem;
+  }
+  .text-container {
+    margin-top: 2rem;
+    width: 20rem;
+    font-size: 1.3rem;
+    text-align: center;
+  }
 }
