@@ -84,6 +84,9 @@ button {
   font-weight: bold;
   font-size: 18px;
 }
+.cart {
+  display: none;
+}
 .spacer {
   grid-area: spacer;
   width: 3px;
@@ -150,15 +153,7 @@ button {
     display: none;
   }
   .booking-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 5px 1fr;
-    gap: 0px 0px;
-    grid-template-areas:
-      "left"
-      "spacer"
-      "right";
-    padding: 10px;
+    display: flex;
   }
   .container-left {
     margin-bottom: 0px;
@@ -179,6 +174,13 @@ button {
   }
   #other {
     height: 4rem;
+  }
+  .buttons {
+    display: flex;
+    justify-content: space-around;
+  }
+  .cart {
+    display: flex;
   }
   .spacer {
     display: none;
