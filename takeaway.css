@@ -44,17 +44,16 @@ h1 {
 }
 .booking-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 5px 1fr;
   grid-template-rows: 1fr;
-  grid-template-areas: "left right";
-  padding: 20px 0px 0px 30px;
-  gap: 10px;
-  justify-items: left;
+  gap: 0px 0px;
+  grid-template-areas: "left spacer right";
+  padding: 30px;
+  justify-items: center;
 }
 
 .container-left {
   grid-area: left;
-  margin: 0px auto 0px auto;
 }
 
 label {
@@ -64,13 +63,13 @@ label {
 }
 input {
   height: 1.8rem;
-  width: 24rem;
+  width: 20rem;
   border: 2px solid #9c9c9c;
   border-radius: 33px;
-  margin: 7px;
+  margin: 5px 0px 5px 0px;
 }
 #date {
-  width: 8.3rem;
+  width: 7.3rem;
 }
 #other {
   height: 8rem;
@@ -85,14 +84,30 @@ button {
   font-weight: bold;
   font-size: 18px;
 }
+.spacer {
+  grid-area: spacer;
+  width: 3px;
+  height: 200px;
+  background-color: black;
+  border-radius: 50px;
+  align-self: center;
+}
+.container-right {
+  grid-area: right;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+}
 
 /* Andreas food items */
 
 .takeaway-menu {
   border: solid 1px black;
   border-radius: 10px;
-  margin: 10px;
+  margin: 8px;
   padding: 10px;
+  width: 92%;
 }
 
 .takeaway-items-inline {
@@ -128,4 +143,47 @@ button {
 .poke-btns {
   display: flex;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 380px) {
+  .order-headline {
+    display: none;
+  }
+  .booking-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 5px 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "left"
+      "spacer"
+      "right";
+    padding: 10px;
+  }
+  .container-left {
+    margin-bottom: 0px;
+  }
+  h1 {
+    font-size: x-large;
+    margin-bottom: 2rem;
+  }
+  label {
+    font-size: medium;
+  }
+  input {
+    height: 1.5rem;
+    width: 17rem;
+  }
+  #date {
+    width: 7rem;
+  }
+  #other {
+    height: 4rem;
+  }
+  .spacer {
+    display: none;
+  }
+  .container-right {
+    display: none;
+  }
 }
