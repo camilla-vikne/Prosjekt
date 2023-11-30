@@ -4,6 +4,8 @@ Black: 000000
 White: ffffff
 Grey border: 9c9c9c
 Input border radius: 33 px
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Noto Serif JP', serif;
 */
 
 /*Camilla log 29.11.23: Satt foreløbig størrelse på input fields. 
@@ -17,7 +19,7 @@ Divene må settes i riktig størrelse, og må begynne
 }
 .header {
   background-color: black;
-  height: 90px;
+  height: 5.6rem;
   width: 100vw;
   color: white;
   display: flex;
@@ -32,31 +34,34 @@ Divene må settes i riktig størrelse, og må begynne
 .nav-items ul li {
   list-style-type: none;
   display: inline;
-  padding-right: 20px;
+  padding-left: 20px;
 }
 .booking-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
-  gap: 10px;
   grid-template-areas: "left right";
   padding: 30px;
+  gap: 10px;
+  justify-items: center;
 }
 .container-left {
   grid-area: left;
-  width: 50rem;
 }
-.headline {
-  line-break: break;
-  margin: 20px 0px 20px 0px;
+
+h1 {
+  font-size: x-large;
+  font-family: "Josefin Sans", sans-serif;
+  margin-bottom: 3rem;
 }
 label {
   font-size: 18px;
   margin: 10px;
+  font-family: "Josefin Sans", sans-serif;
 }
 input {
-  height: 30px;
-  width: 350px;
+  height: 1.8rem;
+  width: 20rem;
   border: 2px solid #9c9c9c;
   border-radius: 33px;
   margin: 5px 0px 5px 0px;
@@ -65,16 +70,16 @@ input {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+  justify-content: start;
+  gap: 4.8rem;
 }
-.peoplepicker {
-  margin-right: 45px;
-}
-#date,
-#people {
-  width: 150px;
+
+input#people,
+#date {
+  width: 7.3rem;
 }
 #other {
-  height: 100px;
+  height: 8rem;
 }
 button {
   height: max-content;
@@ -88,10 +93,18 @@ button {
 }
 .container-right {
   grid-area: right;
-  width: 50rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 img {
-  height: 289px;
-  width: 633px;
+  height: 20rem;
+  width: inherit;
   object-fit: cover;
+}
+.text-container {
+  margin-top: 2rem;
+  width: 30rem;
+  font-family: "Josefin sans";
+  font-size: 1.5rem;
 }
