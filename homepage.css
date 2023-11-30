@@ -125,6 +125,7 @@ nav a:hover::before {
   transform: translate(-50%, -90%);
   border: none;
   background: rgba(0, 0, 0, 0);
+  cursor: pointer;
 }
 
 .breakContainer {
@@ -133,8 +134,8 @@ nav a:hover::before {
 }
 
 .breakSection {
-  display: flex;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   height: 400px;
 }
 
@@ -144,7 +145,7 @@ nav a:hover::before {
 }
 
 .openingTimeSection {
-  width: 30%;
+  padding-left: 60px;
 }
 
 .openingTimeSection li {
@@ -153,11 +154,11 @@ nav a:hover::before {
 }
 
 .localeSection {
-  width: 30%;
+  padding-left: 60px;
 }
 
 .localeSection p {
-  width: 500px;
+  max-width: 500px;
   font-size: 22px;
   font-family: "Lato", sans-serif;
 }
@@ -289,4 +290,10 @@ nav a:hover::before {
   color: white;
   font-size: 28px;
   margin: 7px;
+}
+
+@media (max-width: 1075px) {
+  .headerBtn {
+    width: 90%;
+  }
 }

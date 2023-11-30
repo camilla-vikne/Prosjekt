@@ -1,3 +1,5 @@
+// Carousel
+
 const buttons = document.querySelectorAll("[data-carousel-button]");
 
 buttons.forEach((button) => {
@@ -16,3 +18,13 @@ buttons.forEach((button) => {
     delete activeSlide.dataset.active;
   });
 });
+
+// Scroll buttons
+
+function scrollArrow() {
+  window.scrollTo({ top: 500, behavior: "smooth" });
+}
+
+function scrollDown() {
+  window.scrollTo({ top: 1950, behavior: "smooth" });
+}
