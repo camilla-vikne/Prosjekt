@@ -1,3 +1,7 @@
+<!--/*Camilla log 30.11.23: Gjort det meste ferdig i selve siden og i MQ. Mangler
+    å lage overlay i JS, må finne ut av hvordan denne skal skrives og hvordan den
+    best kan implementeres på siden.
+*/-->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -58,12 +62,14 @@
                 <input type="text" name="other" id="other">
                 <br>
                 <br>
-                <button type="submit"> Place order </button>
+                <div class="buttons">
+                    <button class="cart">Your cart</button>
+                    <button type="submit"> Place order </button>
+                </div>
             </form>
 
         </div>
-
-
+        <div class="spacer"> </div>
         <div class="container-right">
             <div class="takeaway-menu">
                 <h2>California roll</h2>
