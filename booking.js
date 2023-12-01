@@ -1,9 +1,17 @@
-const picker = document.getElementById("date");
-picker.addEventListener("input", function (e) {
-  var day = new Date(this.value).getUTCDay();
-  if ([6, 0].includes(day)) {
-    e.preventDefault();
-    this.value = "";
-    alert("Weekends not allowed");
+function validateForm() {
+  let x = document.forms["booking"]["name"].value;
+  if (x === "") {
+    alert("Name must be filled out");
+    return false;
   }
-});
+  let y = document.forms["booking"]["email"].value;
+  if (y === "") {
+    alert("Email must be filled out");
+    return false;
+  }
+  let z = document.forms["booking"]["phone"].value;
+  if (z === "") {
+    alert("Phone number must be filled out");
+    return false;
+  }
+}

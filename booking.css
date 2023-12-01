@@ -81,7 +81,7 @@ input#people,
 #other {
   height: 8rem;
 }
-button {
+.submit {
   height: max-content;
   width: max-content;
   border-radius: 33px;
