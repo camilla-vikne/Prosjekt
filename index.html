@@ -2,7 +2,10 @@
 <html lang="en">
   <!--/* Kristian 29.11.2023 Laget Nav bar med logo og tekst, brukt flexbox og liste for menu itemsene. Begynt på header med bilde og tekst. Har og nå gjort opening times delen. 
 */-->
-  <!--/* Kristian 30.11.2023 Laget footer section med integrert google map. Lagt til funksjonalitet med scroll knappene, about us og pilen. Begynnt på research til timing function på carousel. MÅ GJØRES: Media queries.  
+  <!--/* Kristian 30.11.2023 Laget footer section med integrert google map. Lagt til funksjonalitet med scroll knappene, about us og pilen. Begynnt på research til timing function på carousel. MÅ GJØRES: Media queries.
+*/-->
+  <!--/* Kristian 01.12.2023 Gjort ferdig JS delen av oppgaven med a legge til en timing function. Tok litt lengre tid enn planlagt men er ihvertfall ferdig nå. Har og begynt på media queries på header seksjonen og skal til å lage hamburger menuen.
+    NESTE GANG: Lag hamburger menu og fullfør media queries.
 */-->
   <head>
     <meta charset="UTF-8" />
@@ -47,10 +50,24 @@
           alt="Image of a sushi held up by some chopsticks against a black background."
         />
       </div>
-      <h5>Enter the wonderful world of sushi with (insert company name)</h5>
+      <div class="headerText">
+        <h5>Enter the wonderful world of sushi with (insert company name)</h5>
+      </div>
       <div class="headerBtn">
-        <button>Book now!</button>
-        <button id="menuBtn">See our menu</button>
+        <button
+          href="./booking.html"
+          onclick="location.href='./booking.html'"
+          type="button"
+        >
+          Book now!
+        </button>
+        <button
+          id="menuBtn"
+          onclick="location.href='./menu.html'"
+          type="button"
+        >
+          See our menu
+        </button>
       </div>
       <button class="arrowDown" id="arrow" onclick="scrollArrow()">
         <img

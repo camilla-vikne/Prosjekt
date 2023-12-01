@@ -82,16 +82,20 @@ nav a:hover::before {
   height: 92vh;
 }
 
+.headerText {
+  width: 86%;
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .headerSection h5 {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 400;
   font-size: 51px;
   width: 403px;
-  position: absolute;
   color: white;
-  top: 35%;
-  left: 20%;
-  transform: translate(-50%, -50%);
 }
 
 .headerBtn {
@@ -111,6 +115,7 @@ nav a:hover::before {
   border-radius: 500px;
   border: none;
   font-size: 20px;
+  cursor: pointer;
 }
 
 .headerBtn #menuBtn {
@@ -292,8 +297,38 @@ nav a:hover::before {
   margin: 7px;
 }
 
-@media (max-width: 1075px) {
+@media (max-width: 1130px) {
   .headerBtn {
     width: 90%;
   }
+
+  .headerText {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1050px) {
+  .headerSection h5 {
+    font-size: 45px;
+    width: 375px;
+  }
+}
+
+@media (max-width: 965px) {
+  .headerBtn {
+    width: 90%;
+  }
+
+  .headerBtn button {
+    margin-left: 40px;
+    padding: 20px 30px;
+    font-size: 18px;
+  }
+
+  nav li {
+    margin-left: 40px;
+  }
+}
+
+@media (max-width: 900px) {
 }
