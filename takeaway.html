@@ -40,10 +40,10 @@
     <div class="booking-container">
 
         <div class="container-left">
-            <form action="" class="booking">
+            <form action="" class="booking" name="booking" onsubmit="return validateForm()">
                 <label for="name">Name</label>
                 <br>
-                <input type="text" id="name">
+                <input type="text" id="name" name="name">
                 <br>
                 <label for="email">Email address</label>
                 <br>
@@ -51,11 +51,11 @@
                 <br>
                 <label for="phone">Phone number</label>
                 <br>
-                <input type="tel" name="phone" id="" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                <input type="tel" name="phone" id="" pattern="[0-9]{8}">
                 <br>
                 <label for="date">Time for pickup</label>
                 <br>
-                <input type="date" id="date" name="date" value="2023-11-29" min="2023-11-01" max="2024-03-01" />
+                <input type="date" id="date" name="date" value="2023-12-31" min="2023-11-01" max="2024-03-01" />
                 <br>
                 <label for="other">Other (allergies, questions etc)</label>
                 <br>
