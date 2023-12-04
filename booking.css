@@ -251,6 +251,10 @@ img {
     margin-bottom: 2rem;
     padding: 0px 2px 0px 2px;
   }
+  .form-container {
+    display: flex;
+    justify-content: center;
+  }
   label {
     font-size: medium;
   }
