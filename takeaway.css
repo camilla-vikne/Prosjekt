@@ -7,6 +7,8 @@ Input border radius: 33 px
 */
 * {
   margin: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
 }
 .header {
   background-color: black;
@@ -54,6 +56,7 @@ h1 {
 
 .container-left {
   grid-area: left;
+  padding-top: 10px;
 }
 
 label {
@@ -66,7 +69,7 @@ input {
   width: 20rem;
   border: 2px solid #9c9c9c;
   border-radius: 33px;
-  margin: 5px 0px 5px 0px;
+  margin: 10px auto 5px 0.6rem;
 }
 #date {
   width: 7.3rem;
@@ -94,6 +97,7 @@ button {
   background-color: black;
   border-radius: 50px;
   align-self: center;
+  margin: 200px auto auto auto;
 }
 .container-right {
   grid-area: right;
@@ -102,50 +106,66 @@ button {
   align-items: start;
   justify-content: start;
 }
+.menu {
+  margin-left: 2rem;
+  width: 45rem;
+}
+.title {
+  padding: 0px;
+}
+.btn-container {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+button {
+  height: max-content;
+  width: max-content;
+  border-radius: 33px;
+  padding: 10px;
+  background-color: #f37063;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  margin-right: 10px;
+}
 
-/* Andreas food items */
-
-.takeaway-menu {
+.section-center {
   border: solid 1px black;
   border-radius: 10px;
-  margin: 8px;
-  padding: 10px;
-  width: 92%;
+  margin: 30px auto 30px auto;
 }
 
-.takeaway-items-inline {
-  display: flex;
-  justify-content: space-between;
-}
-
-.increment-btn {
-  background-color: #f37063;
-  color: white;
-  border-radius: 5px;
-}
-
-.order-btn {
-  background-color: #f37063;
-  color: white;
-  border-radius: 5px;
-}
-.poke {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5px;
-}
-
-.poke-menu-item {
+.menu-item {
   border: solid 1px black;
   border-radius: 10px;
   margin: 10px;
-  padding: 10px;
-  max-width: 12rem;
+  padding: 10px 10px;
+}
+.titles {
+  font-size: 20px;
+  margin: 3px auto 5px 3px;
 }
 
-.poke-btns {
+.item-info {
+  padding: 10px;
+}
+.item-text {
+  margin-bottom: 10px;
+}
+.priceContainer {
   display: flex;
-  justify-content: space-between;
+  justify-content: end;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.cartButtons {
+  display: flex;
+  justify-content: end;
+}
+.addToCart,
+.selectAmount {
+  font-size: small;
 }
 
 @media screen and (max-width: 380px) {

@@ -1,111 +1,71 @@
+<!--Camilla log 01.12.23: Added object array for menu items. Added menu into
+list. Next up is styling the page and adding buttons. -->
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./menu.css" />
-  <script src="./menu*.js" defer></script>
-  <title>Menu</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="menu.js" defer></script>
+  <link rel="stylesheet" href="menu.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Orbitron:wght@400;800&family=Poppins:wght@400;700&family=Tilt+Neon&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Noto+Serif+JP:wght@400;500&display=swap"
     rel="stylesheet">
+  <title>Document</title>
 </head>
 
 <body>
-  <div class="header"></div>
-  <div class="menu_title">
-    <h1>Maki Sushi</h1>
-  </div>
-  <div class="maki_menu">
-    <div class="maki_item">
-      <div class="california">
-        <h2>California roll</h2>
+  <header>
+    <div class="navContainer">
+      <div class="logoSection">
+        <img src="./Bilder/Homepage/logo .svg" alt="Logo of two chopsticks grabbing a sushi roll" class="logo" />
+        <h1>LOGO</h1>
       </div>
-      <div class="maki_items_inline">
-        <p>krabbstick, avokado, ishavsrom, gurka, sesamfrö</p>
-        <h3>Price: 10kr</h3>
+      <nav>
+        <ul>
+          <li><a href="./menu.html">Our menu</a></li>
+          <li><a onclick="scrollDown()" href="#">About us</a></li>
+          <li><a href="./booking.html">Booking</a></li>
+          <li><a href="./takeaway.html">Take away</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <section class="menu">
+    <div class="title">
+      <h2>Our Menu</h2>
+      <div class="underline"></div>
+      <div class="btn-container">
+        <button class="filter-btn" type="button" data-id="all">
+          All
+        </button>
+        <button class="filter-btn" type="button" data-id="maki">
+          Maki
+        </button>
+        <button class="filter-btn" type="button" data-id="nigiri">
+          Nigiri
+        </button>
+        <button class="filter-btn" type="button" data-id="combos">
+          Combos
+        </button>
+
       </div>
     </div>
-    <div class="maki_item">
-      <h2>California roll</h2>
-      <div class="maki_items_inline">
-        <p>krabbstick, avokado, ishavsrom, gurka, sesamfrö</p>
-        <h3>Price: 10kr</h3>
-      </div>
+    <div class="section-center">
+      <article class="menu-item">
+        <div class="heading">
+          <h4 class="titles"></h4>
+        </div>
+        <div class="item-info">
+          <p class="item-text"></p>
+          <h4 class="price"></h4>
+        </div>
     </div>
-    <div class="maki_item">
-      <h2>California roll</h2>
-      <div class="maki_items_inline">
-        <p>krabbstick, avokado, ishavsrom, gurka, sesamfrö</p>
-        <h3>Price: 10kr</h3>
-      </div>
-    </div>
-  </div>
-  <div class="menu_title">
-    <h1>Poke Bowl</h1>
-  </div>
-  <div class="poke_menu">
-    <div class="poke_items">
-      <h3>Salmon</h3>
-      <p>Allergens: fish, egg, soya, sesam</p>
-      <p>
-        Salad mix, cucumber, avocado, seaweed salad, ponzu sauce, chili mayo,
-        kimchi teriyaki
-      </p>
-      <h4>Price: 10kr</h4>
-    </div>
-    <div class="poke_items">
-      <h3>Salmon</h3>
-      <p>Allergens: fish, egg, soya, sesam</p>
-      <p>
-        Salad mix, cucumber, avocado, seaweed salad, ponzu sauce, chili mayo,
-        kimchi teriyaki
-      </p>
-      <h4>Price: 10kr</h4>
-    </div>
-    <div class="poke_items">
-      <h3>Salmon</h3>
-      <p>Allergens: fish, egg, soya, sesam</p>
-      <p>
-        Salad mix, cucumber, avocado, seaweed salad, ponzu sauce, chili mayo,
-        kimchi teriyaki
-      </p>
-      <h4>Price: 10kr</h4>
-    </div>
-    <div class="poke_items">
-      <h3>Salmon</h3>
-      <p>Allergens: fish, egg, soya, sesam</p>
-      <p>
-        Salad mix, cucumber, avocado, seaweed salad, ponzu sauce, chili mayo,
-        kimchi teriyaki
-      </p>
-      <h6>Price: 10kr</h6>
-    </div>
-    <div class="poke_items">
-      <h3>Salmon</h3>
-      <p>Allergens: fish, egg, soya, sesam</p>
-      <p>
-        Salad mix, cucumber, avocado, seaweed salad, ponzu sauce, chili mayo,
-        kimchi teriyaki
-      </p>
-      <h4>Price: 10kr</h4>
-    </div>
-    <div class="poke_items">
-      <h3>Salmon</h3>
-      <p>Allergens: fish, egg, soya, sesam</p>
-      <p>
-        Salad mix, cucumber, avocado, seaweed salad, ponzu sauce, chili mayo,
-        kimchi teriyaki
-      </p>
-      <h4>Price: 10kr</h4>
-    </div>
-  </div>
-  <p>Bruk git commit -a -m "beskjed her"</p>
-  <p>Husk å save lokalt først</p>
-  <p>etterpå velger man git push</p>
+    </article>
+  </section>
 </body>
 
 </html>

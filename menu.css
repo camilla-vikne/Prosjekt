@@ -4,61 +4,177 @@
 
 body {
   font-family: "Josefin Sans", sans-serif;
-  font-family: "Orbitron", sans-serif;
-  font-family: "Poppins", sans-serif;
-  font-family: "Tilt Neon", sans-serif;
   margin: auto;
 }
-
-.header {
-  height: 80px;
-  width: 100vw;
-  background-color: black;
+.navContainer {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.menu_title {
-  height: 50px;
-  width: 100vw;
-  background-color: black;
-  margin: 20px 0px;
+header {
+  background: black;
 }
 
-h1 {
+.logoSection {
+  display: flex;
+}
+
+.logoSection h1 {
   color: white;
-  text-align: center;
 }
 
-.california {
+.logo {
+  width: 75px;
+  height: 70px;
+}
+
+nav {
+  height: 79px;
+  line-height: 79px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  text-align: center;
+  position: relative;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  height: 100%;
+  display: inline-block;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 24px;
+}
+
+nav a::before {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 0%;
+  top: -1px;
+  background-color: white;
+  position: absolute;
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+.headerImg img {
+  width: 100%;
+  height: 92vh;
+  object-fit: cover;
+}
+
+.headerSection {
+  position: relative;
+  height: 92vh;
+}
+
+.headerText {
+  width: 86%;
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.headerSection h5 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 51px;
+  width: 403px;
+  color: white;
+}
+
+.headerBtn {
+  position: absolute;
+  display: flex;
+  justify-content: end;
+  width: 80%;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.headerBtn button {
+  margin-left: 50px;
+  font-family: "Josefin Sans", sans-serif;
+  padding: 25px 35px;
+  border-radius: 500px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.headerBtn #menuBtn {
+  background-color: #f37063;
+  color: white;
+}
+
+.menu h2 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.title {
   padding: 0px;
 }
-
-.maki_menu {
-  border: solid 1px black;
-  border-radius: 10px;
-  margin: 30px;
+.btn-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+button {
+  height: max-content;
+  width: max-content;
+  border-radius: 33px;
+  padding: 10px;
+  background-color: #f37063;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  margin-right: 10px;
 }
 
-.maki_item {
+.section-center {
+  border: solid 1px black;
+  border-radius: 10px;
+  margin: 30px auto 30px auto;
+  width: 80%;
+}
+
+.menu-item {
   border: solid 1px black;
   border-radius: 10px;
   margin: 10px;
-  padding: 0px 10px;
+  padding: 10px 10px;
+}
+.titles {
+  font-size: 20px;
+  margin: 3px auto 5px 3px;
 }
 
-/* .maki_items_inline {
-    display: flex;
-    justify-content: space-between;
-} */
-
-.poke_menu {
-  display: flex;
-  flex-flow: row wrap;
+.item-info {
+  padding: 10px;
 }
-
-.poke_items {
-  border: solid 1px black;
-  border-radius: 10px;
-  padding: 20px;
-  margin: 30px;
-  max-width: 150px;
+.item-text {
+  margin-bottom: 10px;
+}
+.price {
+  float: right;
+  font-size: 18px;
 }
