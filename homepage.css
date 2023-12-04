@@ -50,8 +50,7 @@ nav li {
 nav a {
   color: white;
   text-decoration: none;
-  height: 100%;
-  display: inline-block;
+  display: block;
   font-family: "Josefin Sans", sans-serif;
   font-size: 24px;
 }
@@ -297,6 +296,89 @@ nav a:hover::before {
   margin: 7px;
 }
 
+:root {
+  --bar-width: 60px;
+  --bar-height: 8px;
+  --hamburger-gap: 6px;
+  --foreground: white;
+  --background: black;
+  --hamburger-margin: 8px;
+  --animation-timing: 200ms ease-in-out;
+  --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
+}
+
+.hamburger-menu {
+  --x-width: calc(var(--hamburger-height) * 1.41421356237);
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--hamburger-gap);
+  width: max-content;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.hamburger-menu::before,
+.hamburger-menu::after,
+.hamburger-menu input {
+  content: "";
+  width: var(--bar-width);
+  height: var(--bar-height);
+  background-color: var(--foreground);
+  border-radius: 500px;
+  transform-origin: left center;
+  transition: opacity var(--animation-timing), width var(--animation-timing),
+    rotate var(--animation-timing), translate var(--animation-timing);
+}
+
+.hamburger-menu input {
+  appearance: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  pointer-events: none;
+}
+
+.hamburger-menu:has(input:checked)::before {
+  rotate: 45deg;
+  width: var(--x-width);
+  translate: 0 calc(var(--bar-height) / -2);
+}
+
+.hamburger-menu:has(input:checked)::after {
+  rotate: -45deg;
+  width: var(--x-width);
+  translate: 0 calc(var(--bar-height) / 2);
+}
+
+.hamburger-menu input:checked {
+  opacity: 0;
+  width: 0;
+}
+
+.sidebar {
+  position: absolute;
+  color: black;
+  z-index: 2;
+  font-family: "Josefin Sans";
+  top: 80px;
+  right: 14px;
+  width: 250px;
+  height: 350px;
+  text-align: right;
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5em;
+}
+
+.sidebar div {
+  cursor: pointer;
+  padding: 20px 25px;
+  transition: 0.3s;
+}
+
+.sidebar div:hover {
+}
+
 @media (max-width: 1130px) {
   .headerBtn {
     width: 90%;
@@ -311,6 +393,19 @@ nav a:hover::before {
   .headerSection h5 {
     font-size: 45px;
     width: 375px;
+  }
+  .manifestoSection {
+    max-width: 420px;
+  }
+
+  .manifestoSection p {
+    font-size: 24px;
+  }
+  iframe {
+    width: 450px;
+    height: 338px;
+    resize: both;
+    overflow: auto;
   }
 }
 
@@ -328,7 +423,105 @@ nav a:hover::before {
   nav li {
     margin-left: 40px;
   }
+
+  .manifestoContainer {
+    height: 550px;
+  }
+
+  .manifestoSection {
+    max-width: 350px;
+  }
+
+  .manifestoSection h2 {
+    font-size: 44px;
+  }
+
+  .manifestoSection p {
+    font-size: 20px;
+  }
+
+  .manifestoImgSection img {
+    min-width: 400px;
+    max-height: 301px;
+  }
 }
 
 @media (max-width: 900px) {
+  .headerSection h5 {
+    font-size: 40px;
+    width: 320px;
+  }
+
+  iframe {
+    width: 500px;
+    height: 375px;
+    resize: both;
+    overflow: auto;
+  }
+
+  .footerContainer {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 850px) {
+  nav ul {
+    display: none;
+  }
+}
+
+@media (min-width: 850px) {
+  .hamburgerContainer {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .manifestoContainer {
+    height: 450px;
+  }
+
+  .manifestoSection {
+    max-width: 300px;
+  }
+
+  .manifestoSection h2 {
+    margin-bottom: 20px;
+  }
+
+  .manifestoSection div {
+    top: -22px;
+  }
+
+  .manifestoSection p {
+    font-size: 18px;
+  }
+
+  .manifestoImgSection img {
+    min-width: 300px;
+    max-height: 226px;
+  }
+}
+
+@media (max-width: 720px) {
+  .manifestoContainer {
+    flex-direction: column;
+    height: 650px;
+  }
+  .manifestoSection {
+    max-width: 500px;
+  }
+
+  .manifestoSection h2 {
+    font-size: 44px;
+  }
+
+  .manifestoSection p {
+    font-size: 20px;
+  }
+
+  .manifestoImgSection img {
+    min-width: 500px;
+    max-height: 376px;
+  }
 }
