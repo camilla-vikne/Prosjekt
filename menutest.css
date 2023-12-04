@@ -133,11 +133,28 @@ nav a:hover::before {
 .title {
   padding: 0px;
 }
+.btn-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+button {
+  height: max-content;
+  width: max-content;
+  border-radius: 33px;
+  padding: 10px;
+  background-color: #f37063;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  margin-right: 10px;
+}
 
 .section-center {
   border: solid 1px black;
   border-radius: 10px;
-  margin: 30px;
+  margin: 30px auto 30px auto;
+  width: 80%;
 }
 
 .menu-item {
@@ -148,10 +165,16 @@ nav a:hover::before {
 }
 .titles {
   font-size: 20px;
+  margin: 3px auto 5px 3px;
+}
+
+.item-info {
+  padding: 10px;
+}
+.item-text {
+  margin-bottom: 10px;
 }
 .price {
   float: right;
-}
-.item-info {
-  padding: 10px;
+  font-size: 18px;
 }
