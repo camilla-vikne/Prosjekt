@@ -178,3 +178,18 @@ button {
   float: right;
   font-size: 18px;
 }
+@media screen and (max-width: 800px) {
+  .headerBtn {
+    width: 90%;
+  }
+
+  .headerBtn button {
+    margin-left: 40px;
+    padding: 20px 30px;
+    font-size: 18px;
+  }
+
+  nav li {
+    margin-left: 40px;
+  }
+}

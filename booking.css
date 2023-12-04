@@ -17,32 +17,131 @@ Divene må settes i riktig størrelse, og må begynne
 * {
   margin: 0;
 }
-.header {
-  background-color: black;
-  height: 5.6rem;
-  width: 100vw;
-  color: white;
+.navContainer {
+  width: 90%;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
+
+header {
+  background: black;
+}
+
+.logoSection {
+  display: flex;
+}
+
+.logoSection h1 {
+  color: white;
+}
+
 .logo {
-  margin: auto 0px auto 0px;
+  width: 75px;
+  height: 70px;
 }
-.nav-items {
-  margin: auto 0px auto 0px;
+
+nav {
+  height: 79px;
+  line-height: 79px;
 }
-.nav-items ul li {
-  list-style-type: none;
-  display: inline;
-  padding-left: 20px;
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  text-align: center;
+  position: relative;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  height: 100%;
+  display: inline-block;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 24px;
+}
+
+nav a::before {
+  content: "";
+  display: block;
+  height: 5px;
+  width: 0%;
+  top: -1px;
+  background-color: white;
+  position: absolute;
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+.headerImg img {
+  width: 100%;
+  height: 92vh;
+  object-fit: cover;
+}
+
+.headerSection {
+  position: relative;
+  height: 92vh;
+}
+
+.headerText {
+  width: 86%;
+  position: absolute;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.headerSection h5 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 51px;
+  width: 403px;
+  color: white;
+}
+
+.headerBtn {
+  position: absolute;
+  display: flex;
+  justify-content: end;
+  width: 80%;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.headerBtn button {
+  margin-left: 50px;
+  font-family: "Josefin Sans", sans-serif;
+  padding: 25px 35px;
+  border-radius: 500px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.headerBtn #menuBtn {
+  background-color: #f37063;
+  color: white;
 }
 .booking-container {
   display: grid;
   grid-template-columns: 1fr 5px 1fr;
   grid-template-rows: 1fr;
-  gap: 0px 0px;
+  gap: 1rem 1rem;
   grid-template-areas: "left spacer right";
-  padding: 30px;
+  padding: 2rem;
   justify-items: center;
 }
 .container-left {
@@ -55,7 +154,7 @@ Divene må settes i riktig størrelse, og må begynne
   margin-bottom: 3rem;
 }
 label {
-  font-size: 18px;
+  font-size: large;
   margin: 1rem;
   font-family: "Josefin Sans", sans-serif;
 }
@@ -85,7 +184,7 @@ input#people,
   height: max-content;
   width: max-content;
   border-radius: 33px;
-  padding: 10px;
+  padding: 0.8rem;
   background-color: #f37063;
   color: white;
   font-weight: bold;
@@ -93,11 +192,12 @@ input#people,
 }
 .spacer {
   grid-area: spacer;
-  width: 3px;
-  height: 200px;
+  width: 0.188rem;
+  height: 12.5rem;
   background-color: black;
   border-radius: 50px;
   align-self: center;
+  margin: auto;
 }
 .container-right {
   grid-area: right;
@@ -116,7 +216,20 @@ img {
   font-family: "Josefin sans";
   font-size: 1.5rem;
 }
-@media screen and (max-width: 380px) {
+@media screen and (max-width: 800px) {
+  .headerBtn {
+    width: 90%;
+  }
+
+  .headerBtn button {
+    margin-left: 40px;
+    padding: 20px 30px;
+    font-size: 18px;
+  }
+
+  nav li {
+    margin-left: 40px;
+  }
   .booking-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -158,8 +271,8 @@ img {
   }
 
   .spacer {
-    height: 3px;
-    width: 200px;
+    height: 0.188rem;
+    width: 12.5rem;
   }
   .container-right {
     grid-area: right;
