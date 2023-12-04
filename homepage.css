@@ -362,7 +362,7 @@ nav a:hover::before {
   z-index: 2;
   font-family: "Josefin Sans";
   top: 80px;
-  right: 14px;
+  right: 0px;
   width: 250px;
   height: 350px;
   text-align: right;
@@ -377,6 +377,8 @@ nav a:hover::before {
 }
 
 .sidebar div:hover {
+  background-color: white;
+  border-radius: 7px;
 }
 
 @media (max-width: 1130px) {
