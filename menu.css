@@ -197,13 +197,3 @@ button:hover {
     margin-left: 40px;
   }
 }
-@media (prefers-color-scheme: light) {
-  :root {
-    filter: contrast(1) brightness(0.9);
-  }
-}
-@media (prefers-color-scheme: dark) {
-  :root {
-    filter: contrast(0.3846153846153846) brightness(4.5);
-  }
-}
