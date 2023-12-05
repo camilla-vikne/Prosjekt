@@ -147,6 +147,11 @@ button {
   font-size: 18px;
   margin-right: 10px;
   font-family: "Josefin Sans", sans-serif;
+  border: none;
+  text-align: center;
+}
+button:hover {
+  background-color: #f53726;
 }
 
 .section-center {

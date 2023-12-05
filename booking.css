@@ -189,6 +189,8 @@ input#people,
   color: white;
   font-weight: bold;
   font-size: 18px;
+  font-family: "Josefin Sans", sans-serif;
+  border: none;
 }
 .spacer {
   grid-area: spacer;
