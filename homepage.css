@@ -389,10 +389,10 @@ nav a:hover::before {
   font-size: 1.5em;
   transition: all ease-in-out 250ms;
   overflow: hidden;
+  white-space: nowrap;
 }
 
 .sidebar {
-  translate: 100%;
   position: absolute;
   position: fixed;
   color: black;
@@ -400,13 +400,14 @@ nav a:hover::before {
   font-family: "Josefin Sans";
   top: 80px;
   right: 0px;
-  width: 250px;
+  width: 0px;
   height: 350px;
   font-size: 1.5em;
   text-align: right;
   background-color: rgba(255, 255, 255, 0.8);
   transition: all ease-in-out 250ms;
   overflow: hidden;
+  white-space: nowrap;
 }
 
 .sidebar a,
