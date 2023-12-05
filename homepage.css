@@ -7,10 +7,15 @@
   src: url("./Fonts/Lato-Regular.ttf");
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 .navContainer {
@@ -365,7 +370,7 @@ nav a:hover::before {
   width: 0;
 }
 
-.sidebar {
+.sidebar-active {
   position: absolute;
   color: black;
   z-index: 2;
@@ -380,7 +385,7 @@ nav a:hover::before {
   transition: all ease-in-out 250ms;
 }
 
-.sidebar[data-checked="false"] {
+.sidebar {
   translate: 100%;
   position: absolute;
   color: black;
@@ -390,24 +395,28 @@ nav a:hover::before {
   right: 0px;
   width: 250px;
   height: 350px;
+  font-size: 1.5em;
   text-align: right;
   background-color: rgba(255, 255, 255, 0.8);
   transition: all ease-in-out 250ms;
 }
 
-.sidebar a {
+.sidebar a,
+.sidebar-active a {
   color: black;
   text-decoration: none;
 }
 
-.sidebar li {
+.sidebar li,
+.sidebar-active li {
   cursor: pointer;
   padding: 20px 25px;
   transition: 0.3s;
   list-style: none;
 }
 
-.sidebar li:hover {
+.sidebar li:hover,
+.sidebar-active li:hover {
   background-color: white;
   border-radius: 7px;
 }
