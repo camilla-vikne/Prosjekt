@@ -11,11 +11,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="booking.js" defer></script>
     <link rel="stylesheet" href="booking.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Noto+Serif+JP:wght@400;500&display=swap"
-        rel="stylesheet">
     <title>Oishii booking</title>
 </head>
 
@@ -41,43 +36,47 @@
             <div class="headline">
                 <h1 class="headline">Book a table and see what all the fuss is about</h1>
             </div>
-            <form action="" class="booking" name="booking" onsubmit="return validateForm()">
+            <div class="form-container">
+                <form action="" class="booking" name="booking" onsubmit="return validateForm()">
 
-                <label for="name">Name on the booking</label>
-                <br>
-                <input type="text" id="name" name="name">
-                <br>
-                <label for="email">Email address</label>
-                <br>
-                <input type="email" name="email" id="">
-                <br>
-                <label for="phone">Phone number</label>
-                <br>
-                <input type="tel" name="phone" id="" pattern="[0-9]{8}">
-                <br>
-                <div class="twin-form">
-                    <div class="peoplepicker">
-                        <label for="people">How many?</label>
-                        <br>
-                        <input type="number" name="people" id="people">
+                    <label for="name">Name on the booking</label>
+                    <br>
+                    <input type="text" id="name" name="name">
+                    <br>
+                    <label for="email">Email address</label>
+                    <br>
+                    <input type="email" name="email" id="">
+                    <br>
+                    <label for="phone">Phone number</label>
+                    <br>
+                    <input type="tel" name="phone" id="" pattern="[0-9]{8}">
+                    <br>
+                    <div class="twin-form">
+                        <div class="peoplepicker">
+                            <label for="people">How many?</label>
+                            <br>
+                            <input type="number" name="people" id="people">
+                        </div>
+                        <div class="datepicker">
+                            <label for="date">Date</label>
+                            <br>
+                            <input type="date" id="date" name="date" value="2023-11-29" min="2023-11-01"
+                                max="2024-03-01" />
+                        </div>
+
+
                     </div>
-                    <div class="datepicker">
-                        <label for="date">Date</label>
-                        <br>
-                        <input type="date" id="date" name="date" value="2023-11-29" min="2023-11-01" max="2024-03-01" />
-                    </div>
 
+                    <br>
+                    <label for="other">Other (allergies, questions etc)</label>
+                    <br>
+                    <input type="text" name="other" id="other">
+                    <br>
+                    <br>
+                    <input type="submit" class="submit" value="Place booking"> </input>
+                </form>
+            </div>
 
-                </div>
-
-                <br>
-                <label for="other">Other (allergies, questions etc)</label>
-                <br>
-                <input type="text" name="other" id="other">
-                <br>
-                <br>
-                <input type="submit" class="submit" value="Place booking"> </input>
-            </form>
 
         </div>
         <div class="spacer"></div>
