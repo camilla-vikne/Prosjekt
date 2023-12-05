@@ -1,12 +1,9 @@
 * {
   margin: 0;
 }
-@font-face {
-  font-family: "Josefin Sans";
-  src: url("./Fonts/JosefinSans-VariableFont_wght.ttf");
-}
+
 body {
-  font-family: "Josefin Sans";
+  font-family: "Josefin Sans", sans-serif;
   margin: auto;
 }
 .navContainer {
@@ -149,7 +146,12 @@ button {
   font-weight: bold;
   font-size: 18px;
   margin-right: 10px;
-  font-family: "Josefin Sans";
+  font-family: "Josefin Sans", sans-serif;
+  border: none;
+  text-align: center;
+}
+button:hover {
+  background-color: #f53726;
 }
 
 .section-center {
