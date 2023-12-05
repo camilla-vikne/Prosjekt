@@ -368,15 +368,37 @@ nav a:hover::before {
   text-align: right;
   background-color: rgba(255, 255, 255, 0.8);
   font-size: 1.5em;
+  transition: all ease-in-out 250ms;
 }
 
-.sidebar div {
+.sidebar[data-checked="false"] {
+  translate: 100%;
+  position: absolute;
+  color: black;
+  z-index: 2;
+  font-family: "Josefin Sans";
+  top: 80px;
+  right: 0px;
+  width: 250px;
+  height: 350px;
+  text-align: right;
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: all ease-in-out 250ms;
+}
+
+.sidebar a {
+  color: black;
+  text-decoration: none;
+}
+
+.sidebar li {
   cursor: pointer;
   padding: 20px 25px;
   transition: 0.3s;
+  list-style: none;
 }
 
-.sidebar div:hover {
+.sidebar li:hover {
   background-color: white;
   border-radius: 7px;
 }

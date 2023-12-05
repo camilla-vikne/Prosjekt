@@ -2,6 +2,12 @@
 
 const buttons = document.querySelectorAll("[data-carousel-button]");
 
+const hamburger = document.querySelector("[data-checked]");
+
+function hamburger() {
+  document.getElementById("menuSlide").classList.toggle('data-checked="true"');
+}
+
 function carousel(button) {
   const offset = button.dataset.carouselButton === "next" ? 1 : -1;
   const slides = button

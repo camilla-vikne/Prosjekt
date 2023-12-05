@@ -43,14 +43,16 @@
         <div class="hamburgerContainer">
           <div class="absoluteHamburger">
             <label class="hamburger-menu">
-              <input type="checkbox" />
+              <input type="checkbox" onclick="hamburger()" />
             </label>
           </div>
-          <aside class="sidebar">
-            <div>Home</div>
-            <div>Our menu</div>
-            <div>About us</div>
-            <div>Booking</div>
+          <aside class="sidebar" data-checked="false" id="menuSlide">
+            <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./menu.html">Our menu</a></li>
+              <li><a onclick="scrollDown()" href="#">About us</a></li>
+              <li><a href="./booking.html">Booking</a></li>
+            </ul>
           </aside>
         </div>
       </div>
