@@ -14,12 +14,9 @@ kalender som lar deg velge dato og tid bedre.
 Divene må settes i riktig størrelse, og må begynne
 å jobbe i MQ. Må også sette inn fonter. 
 */
-@font-face {
-  font-family: "Josefin Sans";
-  src: url("./Fonts/JosefinSans-VariableFont_wght.ttf");
-}
+
 body {
-  font-family: "Josefin Sans";
+  font-family: "Josefin Sans", sans-serif;
 }
 * {
   margin: 0;
