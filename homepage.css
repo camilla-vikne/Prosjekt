@@ -637,6 +637,29 @@ nav a:hover::before {
 }
 
 @media (max-width: 580px) {
+  .carousel {
+    width: 100%;
+    aspect-ratio: 48 / 30;
+    position: relative;
+  }
+
+  .carousel ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .slide {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: 300ms opacity ease-in-out;
+    transition-delay: 300ms;
+  }
+
+  .slide > img {
+    aspect-ratio: 48 / 30;
+  }
 }
 
 @media (max-width: 520px) {
