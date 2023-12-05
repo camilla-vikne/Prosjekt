@@ -370,8 +370,13 @@ nav a:hover::before {
   width: 0;
 }
 
+.hamburgerContainer {
+  position: relative;
+}
+
 .sidebar-active {
   position: absolute;
+  position: fixed;
   color: black;
   z-index: 2;
   font-family: "Josefin Sans";
@@ -383,11 +388,13 @@ nav a:hover::before {
   background-color: rgba(255, 255, 255, 0.8);
   font-size: 1.5em;
   transition: all ease-in-out 250ms;
+  overflow: hidden;
 }
 
 .sidebar {
   translate: 100%;
   position: absolute;
+  position: fixed;
   color: black;
   z-index: 2;
   font-family: "Josefin Sans";
@@ -399,6 +406,7 @@ nav a:hover::before {
   text-align: right;
   background-color: rgba(255, 255, 255, 0.8);
   transition: all ease-in-out 250ms;
+  overflow: hidden;
 }
 
 .sidebar a,
