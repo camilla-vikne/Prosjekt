@@ -71,13 +71,13 @@
                     <br>
                     <label for="email">Email address</label>
                     <br>
-                    <input type="email" name="email" id="">
+                    <input type="email" name="email" id="email">
                     <br>
                     <label for="phone">Phone number</label>
                     <br>
-                    <input type="tel" name="phone" id="" pattern="[0-9]{8}">
+                    <input type="tel" name="phone" id="phone" pattern="[0-9]{8}">
                     <br>
-                    <div class="twin-form">
+                    <div class="picking-container">
                         <div class="peoplepicker">
                             <label for="people">How many?</label>
                             <br>
@@ -88,6 +88,25 @@
                             <br>
                             <input type="date" id="date" name="date" value="2023-11-29" min="2023-11-01"
                                 max="2024-03-01" />
+                        </div>
+
+                        <div class="timepicker">
+                            <label for="time">Select time</label>
+                            <br>
+                            <select name="time" id="time">
+                                <option value="Select">Select time</option>
+                                <option value="14">14:00</option>
+                                <option value="1430">14:30</option>
+                                <option value="15">15:00</option>
+                                <option value="1530">15:30</option>
+                                <option value="16">16:00</option>
+                                <option value="1630">16:30</option>
+                                <option value="17">17:00</option>
+                                <option value="1730">17:30</option>
+                                <option value="18">18:00</option>
+                                <option value="1830">18:30</option>
+
+                            </select>
                         </div>
 
 
