@@ -5,7 +5,7 @@ const buttons = document.querySelectorAll("[data-carousel-button]");
 const hamburger = document.querySelector("[data-checked]");
 
 function hamburger() {
-  document.getElementById("menuSlide").classList.toggle('data-checked="true"');
+  document.getElementById("menuSlide").classList.toggle('data-checked="false"');
 }
 
 function carousel(button) {
