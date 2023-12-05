@@ -392,7 +392,6 @@ nav a:hover::before {
 }
 
 .sidebar {
-  translate: 100%;
   position: absolute;
   position: fixed;
   color: black;
@@ -400,7 +399,7 @@ nav a:hover::before {
   font-family: "Josefin Sans";
   top: 80px;
   right: 0px;
-  width: 250px;
+  width: 0px;
   height: 350px;
   font-size: 1.5em;
   text-align: right;
