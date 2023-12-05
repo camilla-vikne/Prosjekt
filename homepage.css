@@ -193,7 +193,7 @@ nav a:hover::before {
 
 .carousel {
   width: 100%;
-  height: 750px;
+  aspect-ratio: 48 / 25;
   position: relative;
 }
 
@@ -214,7 +214,7 @@ nav a:hover::before {
 .slide > img {
   display: block;
   width: 100%;
-  height: 750px;
+  aspect-ratio: 48 / 25;
   object-fit: cover;
   object-position: center;
 }
@@ -430,6 +430,10 @@ nav a:hover::before {
   border-radius: 7px;
 }
 
+.openingTimeSection2 {
+  display: none;
+}
+
 @media (max-width: 1130px) {
   .headerBtn {
     width: 90%;
@@ -437,6 +441,10 @@ nav a:hover::before {
 
   .headerText {
     width: 90%;
+  }
+
+  .localeSection p {
+    max-width: 400px;
   }
 }
 
@@ -495,6 +503,15 @@ nav a:hover::before {
     min-width: 400px;
     max-height: 301px;
   }
+
+  .openingTimeSection li {
+    font-size: 22px;
+  }
+
+  .localeSection p {
+    max-width: 350px;
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 900px) {
@@ -518,6 +535,14 @@ nav a:hover::before {
 @media (max-width: 850px) {
   nav ul {
     display: none;
+  }
+
+  .localeSection p {
+    max-width: 300px;
+  }
+
+  .openingTimeSection li {
+    font-size: 20px;
   }
 }
 
@@ -552,6 +577,40 @@ nav a:hover::before {
     min-width: 300px;
     max-height: 226px;
   }
+
+  .openingTimeSection {
+    display: none;
+  }
+
+  .localeSection {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .localeSection p {
+    max-width: 80%;
+    font-size: 22px;
+  }
+
+  .lineBlack {
+    display: none;
+  }
+
+  .breakContainer {
+    height: 400px;
+  }
+
+  .breakSection {
+    grid-template-columns: 1fr;
+  }
+
+  .openingTimeSection2 {
+    display: block;
+  }
 }
 
 @media (max-width: 720px) {
@@ -574,5 +633,27 @@ nav a:hover::before {
   .manifestoImgSection img {
     min-width: 500px;
     max-height: 376px;
+  }
+}
+
+@media (max-width: 580px) {
+}
+
+@media (max-width: 520px) {
+  .localeSection h2 {
+    display: none;
+  }
+
+  .localeSection p {
+    font-size: 20px;
+  }
+
+  .breakSection {
+    align-items: center;
+  }
+
+  .breakContainer {
+    height: 400px;
+    align-items: center;
   }
 }
