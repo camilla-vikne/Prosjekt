@@ -1,0 +1,116 @@
+<!--/*Camilla log 30.11.23: Gjort det meste ferdig i selve siden og i MQ. Mangler
+    å lage overlay i JS, må finne ut av hvordan denne skal skrives og hvordan den
+    best kan implementeres på siden.
+*/-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="takeaway.css">
+    <script src="takeaway.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Noto+Serif+JP:wght@400;500&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <div class="logo-img"></div>
+            <h1>LOGO</h1>
+        </div>
+        <div class="nav-items">
+            <ul>
+                <li>Our menu</li>
+                <li>About us</li>
+                <li>Booking</li>
+                <li>Takeaway</li>
+            </ul>
+        </div>
+    </div>
+    <div class="order-headline">
+        <h1>Order details</h1>
+        <h1>Your order</h1>
+    </div>
+    <div class="booking-container">
+
+        <div class="container-left">
+            <form action="" class="booking" name="booking" onsubmit="return validateForm()">
+                <label for="name">Name</label>
+                <br>
+                <input type="text" id="name" name="name">
+                <br>
+                <label for="email">Email address</label>
+                <br>
+                <input type="email" name="email" id="">
+                <br>
+                <label for="phone">Phone number</label>
+                <br>
+                <input type="tel" name="phone" id="" pattern="[0-9]{8}">
+                <br>
+                <label for="date">Time for pickup</label>
+                <br>
+                <input type="date" id="date" name="date" value="2023-12-31" min="2023-11-01" max="2024-03-01" />
+                <br>
+                <label for="other">Other (allergies, questions etc)</label>
+                <br>
+                <input type="text" name="other" id="other">
+                <br>
+                <br>
+                <div class="buttons">
+                    <button class="cart">Your cart</button>
+                    <button type="submit"> Place order </button>
+                </div>
+            </form>
+
+        </div>
+        <div class="spacer"> </div>
+        <div class="container-right">
+            <section class="menu">
+                <div class="title">
+                    <div class="btn-container">
+                        <button class="filter-btn" type="button" data-id="all">
+                            All
+                        </button>
+                        <button class="filter-btn" type="button" data-id="maki">
+                            Maki
+                        </button>
+                        <button class="filter-btn" type="button" data-id="nigiri">
+                            Nigiri
+                        </button>
+                        <button class="filter-btn" type="button" data-id="combos">
+                            Combos
+                        </button>
+
+                    </div>
+                </div>
+                <div class="section-center">
+                    <article class="menu-item">
+                        <div class="heading">
+                            <h4 class="titles"></h4>
+                        </div>
+                        <div class="item-info">
+                            <p class="item-text"></p>
+                            <div class="priceContainer">
+                                <h4 class="price"></h4>
+                            </div>
+
+                            <div class="cartButtons">
+                                <button class="selectAmount">1</button>
+                                <button class="addToCart"></button>
+                            </div>
+
+                        </div>
+                </div>
+                </article>
+            </section>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,211 @@
+/* Design elements:
+Pink: F37063
+Black: 000000
+White: ffffff
+Grey border: 9c9c9c
+Input border radius: 33 px
+*/
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+.header {
+  background-color: black;
+  height: 90px;
+  width: 100vw;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  margin: auto 0px auto 0px;
+}
+.nav-items {
+  margin: auto 0px auto 0px;
+}
+.nav-items ul li {
+  list-style-type: none;
+  display: inline;
+  padding-right: 20px;
+}
+.order-headline {
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
+  height: 3rem;
+  margin-top: 2rem;
+}
+h1 {
+  font-size: x-large;
+  font-family: "Josefin Sans", sans-serif;
+  margin-bottom: 3rem;
+  color: white;
+  margin: auto 0px auto 0px;
+}
+.booking-container {
+  display: grid;
+  grid-template-columns: 1fr 5px 1fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "left spacer right";
+  padding: 30px;
+  justify-items: center;
+}
+
+.container-left {
+  grid-area: left;
+  padding-top: 10px;
+}
+
+label {
+  font-size: 18px;
+  margin: 1rem;
+  font-family: "Josefin Sans", sans-serif;
+}
+input {
+  height: 1.8rem;
+  width: 20rem;
+  border: 2px solid #9c9c9c;
+  border-radius: 33px;
+  margin: 10px auto 5px 0.6rem;
+}
+#date {
+  width: 7.3rem;
+}
+#other {
+  height: 8rem;
+}
+button {
+  height: max-content;
+  width: max-content;
+  border-radius: 33px;
+  padding: 10px;
+  background-color: #f37063;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+.cart {
+  display: none;
+}
+.spacer {
+  grid-area: spacer;
+  width: 3px;
+  height: 200px;
+  background-color: black;
+  border-radius: 50px;
+  align-self: center;
+  margin: 200px auto auto auto;
+}
+.container-right {
+  grid-area: right;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+}
+.menu {
+  margin-left: 2rem;
+  width: 45rem;
+}
+.title {
+  padding: 0px;
+}
+.btn-container {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+button {
+  height: max-content;
+  width: max-content;
+  border-radius: 33px;
+  padding: 10px;
+  background-color: #f37063;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.section-center {
+  border: solid 1px black;
+  border-radius: 10px;
+  margin: 30px auto 30px auto;
+}
+
+.menu-item {
+  border: solid 1px black;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px 10px;
+}
+.titles {
+  font-size: 20px;
+  margin: 3px auto 5px 3px;
+}
+
+.item-info {
+  padding: 10px;
+}
+.item-text {
+  margin-bottom: 10px;
+}
+.priceContainer {
+  display: flex;
+  justify-content: end;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.cartButtons {
+  display: flex;
+  justify-content: end;
+}
+.addToCart,
+.selectAmount {
+  font-size: small;
+}
+
+@media screen and (max-width: 380px) {
+  .order-headline {
+    display: none;
+  }
+  .booking-container {
+    display: flex;
+  }
+  .container-left {
+    margin-bottom: 0px;
+  }
+  h1 {
+    font-size: x-large;
+    margin-bottom: 2rem;
+  }
+  label {
+    font-size: medium;
+  }
+  input {
+    height: 1.5rem;
+    width: 17rem;
+  }
+  #date {
+    width: 7rem;
+  }
+  #other {
+    height: 4rem;
+  }
+  .buttons {
+    display: flex;
+    justify-content: space-around;
+  }
+  .cart {
+    display: flex;
+  }
+  .spacer {
+    display: none;
+  }
+  .container-right {
+    display: none;
+  }
+}

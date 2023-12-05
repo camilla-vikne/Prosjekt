@@ -1,3 +1,11 @@
+@font-face {
+  font-family: "Josefin Sans";
+  src: url("./Fonts/JosefinSans-VariableFont_wght.ttf");
+}
+body {
+  font-family: "Josefin Sans";
+}
+
 body {
   margin: 0;
   padding: 0;
