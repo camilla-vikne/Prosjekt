@@ -2,8 +2,11 @@
   font-family: "Josefin Sans";
   src: url("./Fonts/JosefinSans-VariableFont_wght.ttf");
 }
+@font-face {
+  font-family: "Lato Regular";
+  src: url("./Fonts/Lato-Regular.ttf");
+}
 body {
-  font-family: "Josefin Sans";
 }
 
 body {
@@ -59,7 +62,7 @@ nav a {
   color: white;
   text-decoration: none;
   display: block;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Josefin Sans";
   font-size: 24px;
 }
 
@@ -98,7 +101,7 @@ nav a:hover::before {
 }
 
 .headerSection h5 {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Josefin Sans";
   font-weight: 400;
   font-size: 51px;
   width: 403px;
@@ -117,7 +120,7 @@ nav a:hover::before {
 
 .headerBtn button {
   margin-left: 50px;
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Josefin Sans";
   padding: 25px 35px;
   border-radius: 500px;
   border: none;
@@ -152,7 +155,7 @@ nav a:hover::before {
 }
 
 .breakSection h2 {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Josefin Sans";
   font-size: 40px;
 }
 
@@ -162,7 +165,7 @@ nav a:hover::before {
 
 .openingTimeSection li {
   font-size: 24px;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato Regular";
 }
 
 .localeSection {
@@ -172,7 +175,7 @@ nav a:hover::before {
 .localeSection p {
   max-width: 500px;
   font-size: 22px;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato Regular";
 }
 
 .lineBlack {
@@ -260,7 +263,7 @@ nav a:hover::before {
 }
 
 .manifestoSection h2 {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Josefin Sans";
   font-size: 48px;
   font-weight: 400;
 }
@@ -275,7 +278,7 @@ nav a:hover::before {
 
 .manifestoSection p {
   font-size: 28px;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato Regular";
   margin: 0;
 }
 
@@ -298,7 +301,7 @@ nav a:hover::before {
 }
 
 .footerContainer p {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Josefin Sans";
   color: white;
   font-size: 28px;
   margin: 7px;
