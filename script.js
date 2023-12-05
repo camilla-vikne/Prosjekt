@@ -2,10 +2,16 @@
 
 const buttons = document.querySelectorAll("[data-carousel-button]");
 
-const hamburger = document.querySelector("[data-checked]");
+const menuSlide = document.getElementById("menuSlide");
 
 function hamburger() {
-  document.getElementById("menuSlide").classList.toggle('data-checked="false"');
+  if (menuSlide.classList.contains("sidebar")) {
+    menuSlide.classList.remove("sidebar");
+    menuSlide.classList.add("sidebar-active");
+  } else {
+    menuSlide.classList.remove("sidebar-active");
+    menuSlide.classList.add("sidebar");
+  }
 }
 
 function carousel(button) {
