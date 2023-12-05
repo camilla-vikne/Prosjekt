@@ -15,3 +15,15 @@ function validateForm() {
     return false;
   }
 }
+
+const menuSlide = document.getElementById("menuSlide");
+
+function hamburger() {
+  if (menuSlide.classList.contains("sidebar")) {
+    menuSlide.classList.remove("sidebar");
+    menuSlide.classList.add("sidebar-active");
+  } else {
+    menuSlide.classList.remove("sidebar-active");
+    menuSlide.classList.add("sidebar");
+  }
+}

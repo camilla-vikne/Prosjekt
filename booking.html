@@ -23,20 +23,39 @@
 
 <body>
     <header>
-        <div class="navContainer">
-            <div class="logoSection">
-                <img src="./Bilder/Homepage/logo .svg" alt="Logo of two chopsticks grabbing a sushi roll"
-                    class="logo" />
-                <h1>LOGO</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="./menu.html">Our menu</a></li>
-                    <li><a onclick="scrollDown()" href="#">About us</a></li>
-                    <li><a href="./booking.html">Booking</a></li>
-                </ul>
-            </nav>
+      <div class="navContainer">
+        <div class="logoSection">
+          <img
+            src="./Bilder/Homepage/logo .svg"
+            alt="Logo of two chopsticks grabbing a sushi roll"
+            class="logo"
+          />
+          <h1>LOGO</h1>
         </div>
+        <nav>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./menu.html">Our menu</a></li>
+            <li><a onclick="scrollDown()" href="#">About us</a></li>
+            <li><a href="./booking.html">Booking</a></li>
+          </ul>
+        </nav>
+        <div class="hamburgerContainer">
+          <div class="absoluteHamburger">
+            <label class="hamburger-menu">
+              <input type="checkbox" onclick="hamburger()" />
+            </label>
+          </div>
+          <aside class="sidebar" class="slideIn" id="menuSlide">
+            <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./menu.html">Our menu</a></li>
+              <li><a onclick="scrollDown()" href="#">About us</a></li>
+              <li><a href="./booking.html">Booking</a></li>
+            </ul>
+          </aside>
+        </div>
+      </div>
     </header>
     <div class="booking-container">
         <div class="container-left">

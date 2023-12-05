@@ -6,6 +6,7 @@ body {
   font-family: "Josefin Sans", sans-serif;
   margin: auto;
 }
+
 .navContainer {
   width: 90%;
   margin: 0 auto;
@@ -52,9 +53,8 @@ nav li {
 nav a {
   color: white;
   text-decoration: none;
-  height: 100%;
-  display: inline-block;
-
+  display: block;
+  font-family: "Josefin Sans";
   font-size: 24px;
 }
 
@@ -71,6 +71,126 @@ nav a::before {
 
 nav a:hover::before {
   width: 100%;
+}
+
+:root {
+  --bar-width: 60px;
+  --bar-height: 8px;
+  --hamburger-gap: 6px;
+  --foreground: white;
+  --background: black;
+  --hamburger-margin: 8px;
+  --animation-timing: 200ms ease-in-out;
+  --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
+}
+
+.hamburger-menu {
+  --x-width: calc(var(--hamburger-height) * 1.41421356237);
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--hamburger-gap);
+  width: max-content;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.hamburger-menu::before,
+.hamburger-menu::after,
+.hamburger-menu input {
+  content: "";
+  width: var(--bar-width);
+  height: var(--bar-height);
+  background-color: var(--foreground);
+  border-radius: 500px;
+  transform-origin: left center;
+  transition: opacity var(--animation-timing), width var(--animation-timing),
+    rotate var(--animation-timing), translate var(--animation-timing);
+}
+
+.hamburger-menu input {
+  appearance: none;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  pointer-events: none;
+}
+
+.hamburger-menu:has(input:checked)::before {
+  rotate: 45deg;
+  width: var(--x-width);
+  translate: 0 calc(var(--bar-height) / -2);
+}
+
+.hamburger-menu:has(input:checked)::after {
+  rotate: -45deg;
+  width: var(--x-width);
+  translate: 0 calc(var(--bar-height) / 2);
+}
+
+.hamburger-menu input:checked {
+  opacity: 0;
+  width: 0;
+}
+
+.hamburgerContainer {
+  position: relative;
+}
+
+.sidebar-active {
+  position: absolute;
+  position: fixed;
+  color: black;
+  z-index: 2;
+  font-family: "Josefin Sans";
+  top: 80px;
+  right: 0px;
+  width: 250px;
+  height: 350px;
+  text-align: right;
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5em;
+  transition: all ease-in-out 250ms;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.sidebar {
+  position: absolute;
+  position: fixed;
+  color: black;
+  z-index: 2;
+  font-family: "Josefin Sans";
+  top: 80px;
+  right: 0px;
+  width: 0px;
+  height: 350px;
+  font-size: 1.5em;
+  text-align: right;
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: all ease-in-out 250ms;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.sidebar a,
+.sidebar-active a {
+  color: black;
+  text-decoration: none;
+}
+
+.sidebar li,
+.sidebar-active li {
+  cursor: pointer;
+  padding: 20px 25px;
+  transition: 0.3s;
+  list-style: none;
+}
+
+.sidebar li:hover,
+.sidebar-active li:hover {
+  background-color: white;
+  border-radius: 7px;
 }
 
 .headerImg img {
@@ -195,5 +315,23 @@ button:hover {
 
   nav li {
     margin-left: 40px;
+  }
+}
+
+@media (max-width: 965px) {
+  nav li {
+    margin-left: 40px;
+  }
+}
+
+@media (max-width: 850px) {
+  nav ul {
+    display: none;
+  }
+}
+
+@media (min-width: 850px) {
+  .hamburgerContainer {
+    display: none;
   }
 }
