@@ -39,11 +39,13 @@ header {
 
 .logoSection h1 {
   color: white;
+  font-family: "Asian Tiger";
 }
 
-.logo {
+.logo h1 {
   width: 75px;
   height: 70px;
+  font-family: "Asia Tiger";
 }
 
 nav {
