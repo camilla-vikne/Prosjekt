@@ -63,32 +63,32 @@
 
           <label for="name">Name on the booking</label>
           <br>
-          <input type="text" id="name" name="name">
+          <input type="text" id="name" name="name" required>
           <br>
           <label for="email">Email address</label>
           <br>
-          <input type="email" name="email" id="email">
+          <input type="email" name="email" id="email" required>
           <br>
           <label for="phone">Phone number</label>
           <br>
-          <input type="tel" name="phone" id="phone" pattern="[0-9]{8}">
+          <input type="tel" name="phone" id="phone" pattern="[0-9]{8}" required>
           <br>
           <div class="picking-container">
             <div class="peoplepicker">
               <label for="people">How many?</label>
               <br>
-              <input type="number" name="people" id="people">
+              <input type="number" name="people" id="people" required>
             </div>
             <div class="datepicker">
               <label for="date">Date</label>
               <br>
-              <input type="date" id="date" name="date" value="2023-11-29" min="2023-11-01" max="2024-03-01" />
+              <input type="date" id="date" name="date" min="2023-12-01" max="2024-03-01" required />
             </div>
 
             <div class="timepicker">
               <label for="time">Select time</label>
               <br>
-              <select name="time" id="time">
+              <select name="time" id="time" required>
                 <option value="Select">Select time</option>
                 <option value="14">14:00</option>
                 <option value="1430">14:30</option>
