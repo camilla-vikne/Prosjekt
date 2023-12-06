@@ -125,7 +125,6 @@ nav a:hover::before {
 }
 
 .headerBtn button {
-  margin-left: 50px;
   font-family: "Josefin Sans";
   padding: 25px 35px;
   border-radius: 500px;
@@ -137,6 +136,7 @@ nav a:hover::before {
 .headerBtn #menuBtn {
   background-color: #f37063;
   color: white;
+  margin-left: 50px;
 }
 
 .arrowDown {
@@ -236,6 +236,9 @@ nav a:hover::before {
   cursor: pointer;
   background-color: rgba(255, 255, 255, 0.3);
   border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .carouselBtn:hover {
@@ -289,8 +292,8 @@ nav a:hover::before {
 }
 
 .manifestoImgSection img {
-  min-width: 500px;
-  max-height: 376px;
+  width: 500px;
+  height: 376px;
   object-fit: cover;
 }
 
@@ -311,6 +314,10 @@ nav a:hover::before {
   color: white;
   font-size: 28px;
   margin: 7px;
+}
+
+.marginFooter {
+  background-color: black;
 }
 
 :root {
@@ -435,6 +442,17 @@ nav a:hover::before {
 
 .openingTimeSection2 {
   display: none;
+  padding-left: 60px;
+}
+
+.openingTimeSection2 h2 {
+  font-family: "Josefin Sans";
+  font-size: 40px;
+}
+
+.openingTimeSection2 li {
+  font-size: 24px;
+  font-family: "Lato Regular";
 }
 
 @media (max-width: 1130px) {
@@ -477,9 +495,12 @@ nav a:hover::before {
   }
 
   .headerBtn button {
-    margin-left: 40px;
     padding: 20px 30px;
     font-size: 18px;
+  }
+
+  .headerBtn #menuBtn {
+    margin-left: 40px;
   }
 
   nav li {
@@ -503,8 +524,8 @@ nav a:hover::before {
   }
 
   .manifestoImgSection img {
-    min-width: 400px;
-    max-height: 301px;
+    width: 400px;
+    height: 301px;
   }
 
   .openingTimeSection li {
@@ -524,14 +545,19 @@ nav a:hover::before {
   }
 
   iframe {
-    width: 500px;
-    height: 375px;
+    max-width: 500px;
     resize: both;
     overflow: auto;
   }
 
   .footerContainer {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 760px) {
+  .headerText {
+    display: none;
   }
 }
 
@@ -546,6 +572,9 @@ nav a:hover::before {
 
   .openingTimeSection li {
     font-size: 20px;
+  }
+  .headerBtn button {
+    font-size: 16px;
   }
 }
 
@@ -577,8 +606,8 @@ nav a:hover::before {
   }
 
   .manifestoImgSection img {
-    min-width: 300px;
-    max-height: 226px;
+    width: 300px;
+    height: 226px;
   }
 
   .openingTimeSection {
@@ -614,12 +643,43 @@ nav a:hover::before {
   .openingTimeSection2 {
     display: block;
   }
+
+  .headerText h5 {
+    font-size: 38px;
+    width: 300px;
+  }
+
+  .headerBtn #menuBtn {
+    margin: 0;
+  }
+
+  .headerBtn #menuBtn {
+    margin-top: 20px;
+  }
+
+  .headerBtn {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    top: 80%;
+    width: 100%;
+  }
+
+  .arrowDown {
+    position: absolute;
+    top: 102%;
+    left: 50%;
+    transform: translate(-50%, -90%);
+    border: none;
+    background: rgba(0, 0, 0, 0);
+    cursor: pointer;
+  }
 }
 
 @media (max-width: 720px) {
   .manifestoContainer {
     flex-direction: column;
-    height: 650px;
+    height: 850px;
   }
   .manifestoSection {
     max-width: 500px;
@@ -634,8 +694,12 @@ nav a:hover::before {
   }
 
   .manifestoImgSection img {
-    min-width: 500px;
-    max-height: 376px;
+    width: 500px;
+    height: 375px;
+  }
+
+  .carouselBtn img {
+    width: 50px;
   }
 }
 
@@ -663,6 +727,37 @@ nav a:hover::before {
   .slide > img {
     aspect-ratio: 48 / 30;
   }
+
+  .marginFooter {
+    background-color: black;
+  }
+
+  .footerContainer {
+    margin: 0 5%;
+  }
+
+  .manifestoMargin {
+    background-color: black;
+  }
+
+  .manifestoContainer {
+    margin: 0 5%;
+  }
+
+  .manifestoImgSection img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+  }
+
+  .openingTimeSection2 {
+    padding-left: 0;
+  }
+
+  .section2Container {
+    display: flex;
+    justify-content: center;
+    margin: 0 5%;
+  }
 }
 
 @media (max-width: 520px) {
@@ -681,5 +776,52 @@ nav a:hover::before {
   .breakContainer {
     height: 400px;
     align-items: center;
+  }
+
+  iframe {
+    max-width: 100%;
+    resize: both;
+    overflow: auto;
+    text-align: center;
+  }
+
+  .openingTimeSection2 {
+  }
+}
+
+@media (max-width: 426px) {
+  .carouselBtn img {
+    width: 40px;
+  }
+}
+
+@media (max-width: 402px) {
+  .openingTimeSection2 li {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 370px) {
+  .manifestoContainer {
+    flex-direction: column;
+    height: 850px;
+  }
+  .manifestoSection {
+    max-width: 500px;
+  }
+
+  .manifestoSection h2 {
+    font-size: 40px;
+  }
+
+  .manifestoSection p {
+    font-size: 19px;
+  }
+
+  .manifestoSection div {
+    width: 280px;
+  }
+
+  .textInfo {
   }
 }
