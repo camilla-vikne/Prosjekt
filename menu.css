@@ -42,6 +42,9 @@ header {
   height: 79px;
   line-height: 79px;
 }
+.logoSection a {
+  text-decoration: none;
+}
 
 .logo {
   width: 75px;
