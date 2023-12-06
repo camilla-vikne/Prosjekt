@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "Asia Tiger";
+  src: url("AsiaTiger.woff2") format("woff2"),
+    url("AsiaTiger.woff") format("woff"),
+    url("AsiaTiger.ttf") format("truetype"),
+    url("AsiaTiger.svg#AsiaTiger") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 body {
   font-family: "Josefin Sans", sans-serif;
   margin: auto;
@@ -26,6 +36,7 @@ header {
 
 .logoSection h1 {
   color: white;
+  font-family: "Asia Tiger";
 }
 
 .logo {

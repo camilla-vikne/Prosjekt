@@ -19,6 +19,7 @@ function validateForm() {
   }
 }
 
+document.getElementById("date").valueAsDate = new Date();
 //functionality for the hamburger menu present
 //on smaller screens
 
