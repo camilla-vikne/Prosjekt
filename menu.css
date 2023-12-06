@@ -1,12 +1,13 @@
-* {
-  margin: 0;
-}
-
 body {
   font-family: "Josefin Sans", sans-serif;
   margin: auto;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
+html {
+  overflow-x: hidden;
+}
 .navContainer {
   width: 90%;
   margin: 0 auto;
@@ -245,7 +246,7 @@ nav a:hover::before {
 
 .menu h2 {
   text-align: center;
-  margin-top: 20px;
+  font-size: xx-large;
 }
 
 .title {
@@ -254,18 +255,18 @@ nav a:hover::before {
 .btn-container {
   display: flex;
   justify-content: center;
-  padding: 20px;
+  padding: 1rem;
 }
 button {
   height: max-content;
   width: max-content;
   border-radius: 33px;
-  padding: 10px;
+  padding: 0.8rem;
   background-color: #f37063;
   color: black;
   font-weight: bold;
   font-size: 18px;
-  margin-right: 10px;
+  margin-right: 0.8rem;
   font-family: "Josefin Sans", sans-serif;
   border: none;
   text-align: center;
@@ -284,8 +285,8 @@ button:hover {
 .menu-item {
   border: solid 1px black;
   border-radius: 10px;
-  margin: 10px;
-  padding: 10px 10px;
+  margin: 0.8rem;
+  padding: 0.8rem 0.8rem;
 }
 .titles {
   font-size: 20px;
@@ -293,13 +294,18 @@ button:hover {
 }
 
 .item-info {
-  padding: 10px;
+  padding: 0.4rem;
+  display: grid;
+  grid-template-columns: 1fr 1rem;
+  gap: 1rem;
+  grid-template-areas: "item price";
+  padding: 0px;
 }
-.item-text {
-  margin-bottom: 10px;
+.item-desc {
+  grid-area: "item";
 }
-.price {
-  float: right;
+.price-desc {
+  grid-area: "price";
   font-size: 18px;
 }
 @media screen and (max-width: 800px) {

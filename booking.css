@@ -17,9 +17,14 @@ Divene må settes i riktig størrelse, og må begynne
 
 body {
   font-family: "Josefin Sans", sans-serif;
-}
-* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+html {
+  overflow-x: hidden;
 }
 
 .navContainer {
@@ -309,6 +314,13 @@ select {
 }
 #other {
   height: 8rem;
+  padding: 10px;
+  width: 20rem;
+  border: 2px solid #9c9c9c;
+  border-radius: 33px;
+  margin: 5px 0px 5px 0px;
+  resize: none;
+  font-family: "Josefin Sans", sans-serif;
 }
 .submit {
   height: max-content;
@@ -341,15 +353,23 @@ select {
   align-items: center;
 }
 img {
-  height: 20rem;
-  width: inherit;
-  object-fit: cover;
+  max-width: 100%;
+  width: auto;
+  height: auto;
 }
 .text-container {
   margin-top: 2rem;
   width: 30rem;
   font-size: 1.5rem;
 }
+
+/* Media queries here*/
+@media screen and (max-width: 900px) {
+  .spacer {
+    visibility: hidden;
+  }
+}
+
 @media screen and (max-width: 800px) {
   .headerBtn {
     width: 90%;
@@ -390,6 +410,91 @@ img {
     justify-content: center;
   }
   label {
+    font-size: large;
+  }
+  input {
+    height: 1.8rem;
+    width: 22rem;
+  }
+  .twin-form {
+    gap: 2.8rem;
+  }
+
+  #people,
+  #date,
+  #time {
+    width: 7rem;
+    height: 1.8rem;
+    text-align: center;
+  }
+  #other {
+    height: 4rem;
+  }
+
+  .spacer {
+    height: 0.188rem;
+    width: 12.5rem;
+    visibility: visible;
+    margin: 1rem auto 3rem auto;
+  }
+  .container-right {
+    grid-area: right;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+  }
+  .image-container {
+    max-width: 80%;
+    margin: 0 auto 0 auto;
+  }
+  .text-container {
+    margin-top: 2rem;
+    width: 18rem;
+    font-size: 1.3rem;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 600px) {
+  .headerBtn {
+    width: 90%;
+  }
+
+  .headerBtn button {
+    margin-left: 40px;
+    padding: 20px 30px;
+    font-size: 18px;
+  }
+
+  nav li {
+    margin-left: 40px;
+  }
+  .booking-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 5px 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "left"
+      "spacer"
+      "right";
+    padding: 10px 0px 0px 0px;
+    align-items: center;
+  }
+  .container-left {
+    margin-bottom: 1rem;
+  }
+  .headline h1 {
+    font-size: 1.5em;
+    word-wrap: normal;
+    margin-bottom: 2rem;
+    padding: 0px 2px 0px 2px;
+  }
+  .form-container {
+    display: flex;
+    justify-content: center;
+  }
+  label {
     font-size: medium;
   }
   input {
@@ -400,12 +505,13 @@ img {
     gap: 2.8rem;
   }
 
-  input#people,
+  #people,
   #date {
     width: 7rem;
   }
   #other {
     height: 4rem;
+    width: 17rem;
   }
 
   .spacer {
@@ -416,12 +522,16 @@ img {
     grid-area: right;
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: center;
     justify-content: start;
   }
-  img {
-    height: 13rem;
+  .image-container {
+    margin-top: 0px;
   }
+  img {
+    margin-top: 0px;
+  }
+
   .text-container {
     margin-top: 2rem;
     width: 18rem;
@@ -445,5 +555,20 @@ img {
 @media (min-width: 850px) {
   .hamburgerContainer {
     display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .headline h1 {
+    text-align: center;
+  }
+  .headline {
+    width: 20rem;
+  }
+  .container-left {
+    align-items: center;
+    justify-content: center;
+  }
+  .spacer {
+    margin: 0.5rem auto 0.5rem auto;
   }
 }

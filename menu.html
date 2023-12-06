@@ -23,48 +23,42 @@ list. Next up is styling the page and adding buttons. -->
 
 <body>
   <header>
-      <div class="navContainer">
-        <div class="logoSection">
-          <img
-            src="./Bilder/Homepage/logo .svg"
-            alt="Logo of two chopsticks grabbing a sushi roll"
-            class="logo"
-          />
-          <h1>Oishii</h1>
+    <div class="navContainer">
+      <div class="logoSection">
+        <img src="./Bilder/Homepage/logo .svg" alt="Logo of two chopsticks grabbing a sushi roll" class="logo" />
+        <h1>Oishii</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./menu.html">Our menu</a></li>
+          <li><a href="./index.html#scrollto">About us</a></li>
+          <li><a href="./booking.html">Booking</a></li>
+        </ul>
+      </nav>
+      <div class="hamburgerContainer">
+        <div class="absoluteHamburger">
+          <label class="hamburger-menu">
+            <input type="checkbox" onclick="hamburger()" />
+          </label>
         </div>
-        <nav>
+        <aside class="sidebar" class="slideIn" id="menuSlide">
           <ul>
             <li><a href="./index.html">Home</a></li>
             <li><a href="./menu.html">Our menu</a></li>
             <li><a href="./index.html#scrollto">About us</a></li>
             <li><a href="./booking.html">Booking</a></li>
           </ul>
-        </nav>
-        <div class="hamburgerContainer">
-          <div class="absoluteHamburger">
-            <label class="hamburger-menu">
-              <input type="checkbox" onclick="hamburger()" />
-            </label>
-          </div>
-          <aside class="sidebar" class="slideIn" id="menuSlide">
-            <ul>
-              <li><a href="./index.html">Home</a></li>
-              <li><a href="./menu.html">Our menu</a></li>
-              <li><a href="./index.html#scrollto">About us</a></li>
-              <li><a href="./booking.html">Booking</a></li>
-            </ul>
-          </aside>
-        </div>
+        </aside>
       </div>
-    </header>
+    </div>
+  </header>
   <section class="menu">
     <div class="title">
       <h2>Our Menu</h2>
       <div class="underline"></div>
       <div class="btn-container">
-        <button class="filter-btn" type="button" data-id="all">
-          All
-        </button>
+
         <button class="filter-btn" type="button" data-id="maki">
           Maki
         </button>
@@ -73,6 +67,9 @@ list. Next up is styling the page and adding buttons. -->
         </button>
         <button class="filter-btn" type="button" data-id="combos">
           Combos
+        </button>
+        <button class="filter-btn" type="button" data-id="all">
+          All
         </button>
 
       </div>
@@ -83,8 +80,13 @@ list. Next up is styling the page and adding buttons. -->
           <h4 class="titles"></h4>
         </div>
         <div class="item-info">
-          <p class="item-text"></p>
-          <h4 class="price"></h4>
+          <div class="item-desc">
+            <p class="item-text"></p>
+          </div>
+          <div class="price-desc">
+            <h4 class="price"></h4>
+          </div>
+
         </div>
     </div>
     </article>

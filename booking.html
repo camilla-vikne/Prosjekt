@@ -7,137 +7,132 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="booking.js" defer></script>
-    <link rel="stylesheet" href="booking.css">
-    <link rel="preconnect" href="https://api.fonts.coollabs.io">
-    <link rel="preconnect" href="api.fonts.coollabs.io" crossorigin>
-    <link
-        href="https://api.fonts.coollabs.io/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-        rel="stylesheet">
-    <link href="./favicon-lightmode.ico" rel="icon" media="(prefers-color-scheme: light)">
-    <link href="./favicon-darkmode.ico" rel="icon" media="(prefers-color-scheme: dark)">
-    <title>Oishii booking</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="booking.js" defer></script>
+  <link rel="stylesheet" href="booking.css">
+  <link rel="preconnect" href="https://api.fonts.coollabs.io">
+  <link rel="preconnect" href="api.fonts.coollabs.io" crossorigin>
+  <link
+    href="https://api.fonts.coollabs.io/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link href="./favicon-lightmode.ico" rel="icon" media="(prefers-color-scheme: light)">
+  <link href="./favicon-darkmode.ico" rel="icon" media="(prefers-color-scheme: dark)">
+  <title>Oishii booking</title>
 </head>
 
 <body>
-    <header>
-      <div class="navContainer">
-        <div class="logoSection">
-          <img
-            src="./Bilder/Homepage/logo .svg"
-            alt="Logo of two chopsticks grabbing a sushi roll"
-            class="logo"
-          />
-          <h1>Oishii</h1>
+  <header>
+    <div class="navContainer">
+      <div class="logoSection">
+        <img src="./Bilder/Homepage/logo .svg" alt="Logo of two chopsticks grabbing a sushi roll" class="logo" />
+        <h1>Oishii</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./menu.html">Our menu</a></li>
+          <li><a href="./index.html#scrollto">About us</a></li>
+          <li><a href="./booking.html">Booking</a></li>
+        </ul>
+      </nav>
+      <div class="hamburgerContainer">
+        <div class="absoluteHamburger">
+          <label class="hamburger-menu">
+            <input type="checkbox" onclick="hamburger()" />
+          </label>
         </div>
-        <nav>
+        <aside class="sidebar" class="slideIn" id="menuSlide">
           <ul>
             <li><a href="./index.html">Home</a></li>
             <li><a href="./menu.html">Our menu</a></li>
             <li><a href="./index.html#scrollto">About us</a></li>
             <li><a href="./booking.html">Booking</a></li>
           </ul>
-        </nav>
-        <div class="hamburgerContainer">
-          <div class="absoluteHamburger">
-            <label class="hamburger-menu">
-              <input type="checkbox" onclick="hamburger()" />
-            </label>
-          </div>
-          <aside class="sidebar" class="slideIn" id="menuSlide">
-            <ul>
-              <li><a href="./index.html">Home</a></li>
-              <li><a href="./menu.html">Our menu</a></li>
-              <li><a href="./index.html#scrollto">About us</a></li>
-              <li><a href="./booking.html">Booking</a></li>
-            </ul>
-          </aside>
-        </div>
+        </aside>
       </div>
-    </header>
-    <div class="booking-container">
-        <div class="container-left">
-            <div class="headline">
-                <h1 class="headline">Book a table and see what all the fuss is about</h1>
-            </div>
-            <div class="form-container">
-                <form action="" class="booking" name="booking" onsubmit="return validateForm()">
-
-                    <label for="name">Name on the booking</label>
-                    <br>
-                    <input type="text" id="name" name="name">
-                    <br>
-                    <label for="email">Email address</label>
-                    <br>
-                    <input type="email" name="email" id="email">
-                    <br>
-                    <label for="phone">Phone number</label>
-                    <br>
-                    <input type="tel" name="phone" id="phone" pattern="[0-9]{8}">
-                    <br>
-                    <div class="picking-container">
-                        <div class="peoplepicker">
-                            <label for="people">How many?</label>
-                            <br>
-                            <input type="number" name="people" id="people">
-                        </div>
-                        <div class="datepicker">
-                            <label for="date">Date</label>
-                            <br>
-                            <input type="date" id="date" name="date" value="2023-11-29" min="2023-11-01"
-                                max="2024-03-01" />
-                        </div>
-
-                        <div class="timepicker">
-                            <label for="time">Select time</label>
-                            <br>
-                            <select name="time" id="time">
-                                <option value="Select">Select time</option>
-                                <option value="14">14:00</option>
-                                <option value="1430">14:30</option>
-                                <option value="15">15:00</option>
-                                <option value="1530">15:30</option>
-                                <option value="16">16:00</option>
-                                <option value="1630">16:30</option>
-                                <option value="17">17:00</option>
-                                <option value="1730">17:30</option>
-                                <option value="18">18:00</option>
-                                <option value="1830">18:30</option>
-
-                            </select>
-                        </div>
-
-
-                    </div>
-
-                    <br>
-                    <label for="other">Other (allergies, questions etc)</label>
-                    <br>
-                    <input type="text" name="other" id="other">
-                    <br>
-                    <br>
-                    <input type="submit" class="submit" value="Place booking"> </input>
-                </form>
-            </div>
-
-
-        </div>
-        <div class="spacer"></div>
-        <div class="container-right">
-            <div class="image-container">
-                <img src="./Bilder/food-photographer-2zcNfPQHlkU-unsplash.jpg"
-                    alt="Six pieces of Maki Sushi on a wooden platter." srcset="">
-            </div>
-            <div class="text-container">
-                <p>Indulge in an exquisite sushi experience by securing your table at Oishii.
-                    Our culinary experts await to delight your palate with the finest selection
-                    of fresh, handcrafted sushi.
-                </p>
-            </div>
-        </div>
     </div>
+  </header>
+  <div class="booking-container">
+    <div class="container-left">
+      <div class="headline">
+        <h1 class="headline">Book a table and see what all the fuss is about</h1>
+      </div>
+      <div class="form-container">
+        <form action="" class="booking" name="booking" onsubmit="return validateForm()">
+
+          <label for="name">Name on the booking</label>
+          <br>
+          <input type="text" id="name" name="name">
+          <br>
+          <label for="email">Email address</label>
+          <br>
+          <input type="email" name="email" id="email">
+          <br>
+          <label for="phone">Phone number</label>
+          <br>
+          <input type="tel" name="phone" id="phone" pattern="[0-9]{8}">
+          <br>
+          <div class="picking-container">
+            <div class="peoplepicker">
+              <label for="people">How many?</label>
+              <br>
+              <input type="number" name="people" id="people">
+            </div>
+            <div class="datepicker">
+              <label for="date">Date</label>
+              <br>
+              <input type="date" id="date" name="date" value="2023-11-29" min="2023-11-01" max="2024-03-01" />
+            </div>
+
+            <div class="timepicker">
+              <label for="time">Select time</label>
+              <br>
+              <select name="time" id="time">
+                <option value="Select">Select time</option>
+                <option value="14">14:00</option>
+                <option value="1430">14:30</option>
+                <option value="15">15:00</option>
+                <option value="1530">15:30</option>
+                <option value="16">16:00</option>
+                <option value="1630">16:30</option>
+                <option value="17">17:00</option>
+                <option value="1730">17:30</option>
+                <option value="18">18:00</option>
+                <option value="1830">18:30</option>
+
+              </select>
+            </div>
+
+
+          </div>
+
+          <br>
+          <label for="other">Other (allergies, questions etc)</label>
+          <br>
+          <textarea name="other" id="other" cols="30" rows="10" form="booking"></textarea>
+          <br>
+          <br>
+          <button class="submit">Place booking</button>
+        </form>
+      </div>
+
+
+    </div>
+    <div class="spacer"></div>
+    <div class="container-right">
+      <div class="image-container">
+        <img src="./Bilder/food-photographer-2zcNfPQHlkU-unsplash.jpg"
+          alt="Six pieces of Maki Sushi on a wooden platter." srcset="">
+      </div>
+      <div class="text-container">
+        <p>Indulge in an exquisite sushi experience by securing your table at Oishii.
+          Our culinary experts await to delight your palate with the finest selection
+          of fresh, handcrafted sushi.
+        </p>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
