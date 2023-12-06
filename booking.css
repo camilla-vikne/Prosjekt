@@ -25,7 +25,6 @@ Divene må settes i riktig størrelse, og må begynne
   font-display: swap;
 }
 body {
-  font-family: "Josefin Sans", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
