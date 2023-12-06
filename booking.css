@@ -29,6 +29,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   overflow-x: hidden;
+  font-family: "Josefin Sans", sans-serif;
 }
 
 html {
@@ -83,7 +84,7 @@ nav a {
   color: white;
   text-decoration: none;
   display: block;
-  font-family: "Josefin Sans";
+  font-family: "Josefin Sans", sans-serif;
   font-size: 24px;
 }
 
@@ -171,7 +172,7 @@ nav a:hover::before {
   position: fixed;
   color: black;
   z-index: 2;
-  font-family: "Josefin Sans";
+  font-family: "Josefin Sans", sans-serif;
   top: 80px;
   right: 0px;
   width: 250px;
@@ -189,7 +190,7 @@ nav a:hover::before {
   position: fixed;
   color: black;
   z-index: 2;
-  font-family: "Josefin Sans";
+  font-family: "Josefin Sans", sans-serif;
   top: 80px;
   right: 0px;
   width: 0px;
