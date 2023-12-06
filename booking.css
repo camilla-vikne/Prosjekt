@@ -464,7 +464,7 @@ img {
     height: 0.188rem;
     width: 12.5rem;
     visibility: visible;
-    margin: 1rem auto 3rem auto;
+    margin: 2.5rem auto 3rem auto;
   }
   .container-right {
     grid-area: right;
@@ -546,6 +546,7 @@ img {
   .spacer {
     height: 0.188rem;
     width: 12.5rem;
+    margin-top:6rem;
   }
   .container-right {
     grid-area: right;
