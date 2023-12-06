@@ -79,7 +79,7 @@ nav a::before {
   display: block;
   height: 5px;
   width: 0%;
-  top: -1px;
+  top: -4.5px;
   background-color: white;
   position: absolute;
   transition: all ease-in-out 250ms;
