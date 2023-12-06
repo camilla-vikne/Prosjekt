@@ -50,11 +50,15 @@ header {
 
 .logoSection {
   display: flex;
+  align-items: center;
 }
 
 .logoSection h1 {
   color: white;
   font-family: "Asia Tiger";
+  margin: 0;
+  height: 79px;
+  line-height: 79px;
 }
 
 .logo {
@@ -93,7 +97,7 @@ nav a::before {
   display: block;
   height: 5px;
   width: 0%;
-  top: -4.5px;
+  top: -1px;
   background-color: white;
   position: absolute;
   transition: all ease-in-out 250ms;
@@ -132,6 +136,7 @@ nav a:hover::before {
   width: var(--bar-width);
   height: var(--bar-height);
   background-color: var(--foreground);
+  border: none;
   border-radius: 500px;
   transform-origin: left center;
   transition: opacity var(--animation-timing), width var(--animation-timing),
@@ -165,6 +170,17 @@ nav a:hover::before {
 
 .hamburgerContainer {
   position: relative;
+}
+
+.screenReaderText {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
 }
 
 .sidebar-active {
@@ -270,7 +286,7 @@ nav a:hover::before {
 
 .headerBtn #menuBtn {
   background-color: #f37063;
-  color: white;
+  color: black;
 }
 .booking-container {
   display: grid;
