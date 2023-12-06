@@ -786,9 +786,6 @@ nav a:hover::before {
     overflow: auto;
     text-align: center;
   }
-
-  .openingTimeSection2 {
-  }
 }
 
 @media (max-width: 426px) {
@@ -822,8 +819,5 @@ nav a:hover::before {
 
   .manifestoSection div {
     width: 280px;
-  }
-
-  .textInfo {
   }
 }
