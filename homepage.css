@@ -1,9 +1,9 @@
 @font-face {
   font-family: "Asia Tiger";
-  src: url("AsiaTiger.woff2") format("woff2"),
-    url("AsiaTiger.woff") format("woff"),
-    url("AsiaTiger.ttf") format("truetype"),
-    url("AsiaTiger.svg#AsiaTiger") format("svg");
+  src: url("./AsiaTiger.woff2") format("woff2"),
+    url("./AsiaTiger.woff") format("woff"),
+    url("./AsiaTiger.ttf") format("truetype"),
+    url("./AsiaTiger.svg#AsiaTiger") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
