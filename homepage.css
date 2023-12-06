@@ -143,6 +143,11 @@ nav a:hover::before {
   background-color: #f37063;
   color: black;
   margin-left: 50px;
+  transition: 0.3s;
+}
+
+#menuBtn:hover {
+  background-color: #e75a4d;
 }
 
 .arrowDown {
