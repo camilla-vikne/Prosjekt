@@ -1,3 +1,4 @@
+//Menu array, easy to add or remove items
 const menu = [
   {
     id: 1,
@@ -121,7 +122,8 @@ const filterBtns = document.querySelectorAll(".filter-btn");
 window.addEventListener("DOMContentLoaded", function () {
   displayMenuItems(menu);
 });
-
+//Allows the user to sort through the categories
+//using the buttons on the page
 filterBtns.forEach(function (btn) {
   btn.addEventListener("click", function (e) {
     const category = e.currentTarget.dataset.id;
@@ -138,6 +140,9 @@ filterBtns.forEach(function (btn) {
   });
 });
 
+//Uses the HTML elements to display the various menu items
+//This way is easier to style, and has the bonus of being
+//responsive on smaller screens without added css
 function displayMenuItems(menuItems) {
   let displayMenu = menuItems.map(function (item) {
     return `<article class="menu-item">
@@ -145,15 +150,20 @@ function displayMenuItems(menuItems) {
                 <h4 class="titles">${item.title} </h4>
             </div>
            <div class="item-info">
-            <p class="item-text">${item.desc}</p>
-            <h4 class="price">${item.price}kr</h4>
+           <div class="item-info">
+          <div class="item-desc">
+          <p class="item-text">${item.desc}</p></div>
+        <div class="price-desc"><h4 class="price">${item.price}kr</h4></div>
+         
+        </div>
+           
         </div>
     </article>`;
   });
   displayMenu = displayMenu.join("");
   sectionCenter.innerHTML = displayMenu;
 }
-
+//Functionality for the menu bar on smaller screens
 const menuSlide = document.getElementById("menuSlide");
 
 function hamburger() {
