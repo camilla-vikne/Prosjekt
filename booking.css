@@ -17,7 +17,8 @@ Divene må settes i riktig størrelse, og må begynne
 @font-face {
   font-family: "Asia Tiger";
   src: url("./Fonts/Asia-Tiger.woff2") format("woff2"),
-    url("./Fonts/Asia-Tiger.woff") format("woff");
+    url("./Fonts/Asia-Tiger.woff") format("woff"),
+    url("./Fonts/Asia\ Tiger.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -52,15 +53,14 @@ header {
 
 .logoSection h1 {
   color: white;
+  font-family: "Asia Tiger";
 }
 
 .logo {
   width: 75px;
   height: 70px;
 }
-.logo-header {
-  font-family: "Asia Tiger";
-}
+
 nav {
   height: 79px;
   line-height: 79px;
