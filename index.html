@@ -1,244 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-  <!--/* Kristian 29.11.2023 Laget Nav bar med logo og tekst, brukt flexbox og liste for menu itemsene. Begynt på header med bilde og tekst. Har og nå gjort opening times delen. 
+<!--/* Kristian 29.11.2023 Laget Nav bar med logo og tekst, brukt flexbox og liste for menu itemsene. Begynt på header med bilde og tekst. Har og nå gjort opening times delen. 
 */-->
-  <!--/* Kristian 30.11.2023 Laget footer section med integrert google map. Lagt til funksjonalitet med scroll knappene, about us og pilen. Begynnt på research til timing function på carousel. MÅ GJØRES: Media queries.
+<!--/* Kristian 30.11.2023 Laget footer section med integrert google map. Lagt til funksjonalitet med scroll knappene, about us og pilen. Begynnt på research til timing function på carousel. MÅ GJØRES: Media queries.
 */-->
-  <!--/* Kristian 01.12.2023 Gjort ferdig JS delen av oppgaven med a legge til en timing function. Tok litt lengre tid enn planlagt men er ihvertfall ferdig nå. Har og begynt på media queries på header seksjonen og skal til å lage hamburger menuen.
+<!--/* Kristian 01.12.2023 Gjort ferdig JS delen av oppgaven med a legge til en timing function. Tok litt lengre tid enn planlagt men er ihvertfall ferdig nå. Har og begynt på media queries på header seksjonen og skal til å lage hamburger menuen.
     NESTE GANG: Lag hamburger menu og fullfør media queries.
 */-->
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://api.fonts.coollabs.io" />
-    <link rel="preconnect" href="api.fonts.coollabs.io" crossorigin />
-    <link
-      href="https://api.fonts.coollabs.io/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="./favicon-lightmode.ico"
-      rel="icon"
-      media="(prefers-color-scheme: light)"
-    />
-    <link
-      href="./favicon-darkmode.ico"
-      rel="icon"
-      media="(prefers-color-scheme: dark)"
-    />
-    <link rel="stylesheet" href="./index.css" />
-    <script src="./index.js" defer></script>
-    <title>Oishii Home</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://api.fonts.coollabs.io" />
+  <link rel="preconnect" href="api.fonts.coollabs.io" crossorigin />
+  <link
+    href="https://api.fonts.coollabs.io/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <link href="./favicon-lightmode.ico" rel="icon" media="(prefers-color-scheme: light)" />
+  <link href="./favicon-darkmode.ico" rel="icon" media="(prefers-color-scheme: dark)" />
+  <link rel="stylesheet" href="./index.css" />
+  <script src="./index.js" defer></script>
+  <title>Oishii Home</title>
+</head>
 
-  <body>
-    <header>
-      <div class="navContainer">
-        <div class="logoSection">
-          <img
-            src="./Bilder/Homepage/logo .svg"
-            alt="Logo of two chopsticks grabbing a sushi roll"
-            class="logo"
-          />
-          <h1>Oishii</h1>
+<body>
+  <header>
+    <div class="navContainer">
+      <div class="logoSection">
+        <img src="./Bilder/Homepage/logo .svg" alt="Logo of two chopsticks grabbing a sushi roll" class="logo" />
+        <h1>Oishii</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./menu.html">Our menu</a></li>
+          <li><a onclick="scrollDown()" href="#">About us</a></li>
+          <li><a href="./booking.html">Booking</a></li>
+        </ul>
+      </nav>
+      <div class="hamburgerContainer">
+        <div class="absoluteHamburger">
+          <label class="hamburger-menu">
+            <span class="screenReaderText">Hamburger menu. Clickable.</span>
+            <input type="checkbox" onclick="hamburger()" />
+          </label>
         </div>
-        <nav>
+        <aside class="sidebar" class="slideIn" id="menuSlide">
           <ul>
             <li><a href="./index.html">Home</a></li>
             <li><a href="./menu.html">Our menu</a></li>
             <li><a onclick="scrollDown()" href="#">About us</a></li>
             <li><a href="./booking.html">Booking</a></li>
           </ul>
-        </nav>
-        <div class="hamburgerContainer">
-          <div class="absoluteHamburger">
-            <label class="hamburger-menu">
-              <span class="screenReaderText">Hamburger menu. Clickable.</span>
-              <input type="checkbox" onclick="hamburger()" />
-            </label>
-          </div>
-          <aside class="sidebar" class="slideIn" id="menuSlide">
-            <ul>
-              <li><a href="./index.html">Home</a></li>
-              <li><a href="./menu.html">Our menu</a></li>
-              <li><a onclick="scrollDown()" href="#">About us</a></li>
-              <li><a href="./booking.html">Booking</a></li>
-            </ul>
-          </aside>
-        </div>
+        </aside>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <div class="headerSection">
-      <div class="headerImg">
-        <img
-          src="./Bilder/Homepage/Header img.jpg"
-          alt="A sushi held up by some chopsticks against a black background."
-        />
-      </div>
-      <div class="headerText">
-        <h5>
-          Enter the wonderful world of sushi with Oishii sushi & restaurant
-        </h5>
-      </div>
-      <div class="headerBtn">
-        <button
-          href="./booking.html"
-          onclick="location.href='./booking.html'"
-          type="button"
-        >
-          Book now!
-        </button>
-        <button
-          id="menuBtn"
-          onclick="location.href='./menu.html'"
-          type="button"
-        >
-          See our menu
-        </button>
-      </div>
-      <button class="arrowDown" id="arrow" onclick="scrollArrow()">
-        <img
-          src="./Bilder/Homepage/arrow-down.svg"
-          alt="A white arrow facing downwards. Clickable."
-        />
+  <div class="headerSection">
+    <div class="headerImg">
+      <img src="./Bilder/Homepage/Header img.jpg"
+        alt="A sushi held up by some chopsticks against a black background." />
+    </div>
+    <div class="headerText">
+      <h5>
+        Enter the wonderful world of sushi with Oishii sushi & restaurant
+      </h5>
+    </div>
+    <div class="headerBtn">
+      <button href="./booking.html" onclick="location.href='./booking.html'" type="button">
+        Book now!
+      </button>
+      <button id="menuBtn" onclick="location.href='./menu.html'" type="button">
+        See our menu
       </button>
     </div>
+    <button class="arrowDown" id="arrow" onclick="scrollArrow()">
+      <img src="./Bilder/Homepage/arrow-down.svg" alt="A white arrow facing downwards. Clickable." />
+    </button>
+  </div>
 
-    <div class="breakContainer">
-      <div class="breakSection">
-        <div class="openingTimeSection">
-          <h2>Opening Times</h2>
-          <ul>
-            <li>Monday - Friday: 14:00 - 23:00</li>
-            <br />
-            <li>Saturday: 16:00 - 0:00</li>
-            <br />
-            <li>Sunday: 15:00 - 23:00</li>
-          </ul>
-        </div>
-        <div class="localeSection">
-          <h2>Locale</h2>
-          <p>
-            Welcome to Oishii restaurant, where culinary artistry meets serene
-            ambience. Nestled in the heart of Bergen, our sushi haven invites
-            you to indulge in a sensory experience like no other.<br /><br />
-            For those who savor al fresco dining, our outdoor seating option
-            lets you relish your favorite sushi creations under the open sky.
-          </p>
-        </div>
-      </div>
-      <div class="lineBlack"></div>
-    </div>
-    <section>
-      <div class="carousel" data-carousel>
-        <button class="carouselBtn prev" data-carousel-button="prev">
-          <img
-            src="./Bilder/Homepage/arrow.left.svg"
-            alt="Arrow on top of image that goes to the previous image"
-          />
-        </button>
-        <button class="carouselBtn next" data-carousel-button="next">
-          <img
-            src="./Bilder/Homepage/arrow.right.svg"
-            alt="Arrow on top of image that goes to the next image"
-          />
-        </button>
-        <ul data-slides>
-          <li class="slide" data-active>
-            <img
-              src="./Bilder/Homepage/Carousel pic 1.jpg"
-              alt="Picture of 4 sushi rolls in a line with jalapenos on top"
-            />
-          </li>
-          <li class="slide">
-            <img
-              src="./Bilder/Homepage/Carousel pic 2.jpg"
-              alt="Picture of a pair of chopsticks picking up a maki with cream cheese and some sauce on top."
-            />
-          </li>
-          <li class="slide">
-            <img
-              src="./Bilder/Homepage/Carousel pic 3.jpg"
-              alt="Picture of 2 rice onigiri. One plain and one with some flavour added"
-            />
-          </li>
-          <li class="slide">
-            <img
-              src="./Bilder/Homepage/Carousel pic 4.jpg"
-              alt="Picture of 3 prawn nagiri on top of some bamboo leaves"
-            />
-          </li>
-          <li class="slide">
-            <img
-              src="./Bilder/Homepage/carousel pic 5.jpg"
-              alt="A picture of 8 maki with some white sauce on top"
-            />
-          </li>
-        </ul>
-      </div>
-    </section>
-    <section class="manifesto">
-      <div class="manifestoMargin">
-        <div class="manifestoContainer" id="scrollto">
-          <div class="manifestoSection">
-            <h2>Our Manifesto</h2>
-            <div class="lineBreak"></div>
-            <p>
-              Welcome to our sushi haven, where artistry meets flavor in every
-              roll. Embark on a culinary journey crafted with precision and
-              passion, as we blend tradition with innovation.<br /><br />
-              Our commitment to fresh, quality ingredients ensures an
-              unforgettable dining experience, inviting you to savor the essence
-              of Japanese culinary mastery.
-            </p>
-          </div>
-          <div class="manifestoImgSection">
-            <img
-              src="./Bilder/Homepage/Manifesto pic.jpg"
-              alt="Pic of our Chef making some delicious food"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-    <div class="section2Container">
-      <div class="openingTimeSection2">
+  <div class="breakContainer">
+    <div class="breakSection">
+      <div class="openingTimeSection">
         <h2>Opening Times</h2>
         <ul>
           <li>Monday - Friday: 14:00 - 23:00</li>
           <br />
-          <li>Saturday: 16:00 - 00:00</li>
+          <li>Saturday: 16:00 - 0:00</li>
           <br />
           <li>Sunday: 15:00 - 23:00</li>
         </ul>
       </div>
+      <div class="localeSection">
+        <h2>Locale</h2>
+        <p>
+          Welcome to Oishii restaurant, where culinary artistry meets serene
+          ambience. Nestled in the heart of Bergen, our sushi haven invites
+          you to indulge in a sensory experience like no other.<br /><br />
+          For those who savor al fresco dining, our outdoor seating option
+          lets you relish your favorite sushi creations under the open sky.
+        </p>
+      </div>
     </div>
-    <div class="footer">
-      <div class="marginFooter">
-        <div class="footerContainer">
-          <div class="map">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1971.24918392395!2d5.32677847718264!3d60.39156207514606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x463cfea8dfd8da5f%3A0x5e8fbdd1a28aa478!2sKaigaten%204%2C%205016%20Bergen!5e0!3m2!1sen!2sno!4v1701339408443!5m2!1sen!2sno"
-              width="600px"
-              height="450px"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
-          <div class="textInfo">
-            <p>Where to find us:</p>
-            <p>Kaigaten 4</p>
-            <p>5016 Bergen</p>
-            <br />
-            <p>Tel 989 44 231</p>
-            <p>Email: booking@Oishii.com</p>
-          </div>
+    <div class="lineBlack"></div>
+  </div>
+  <section>
+    <div class="carousel" data-carousel>
+      <button class="carouselBtn prev" data-carousel-button="prev">
+        <img src="./Bilder/Homepage/arrow.left.svg" alt="Arrow on top of image that goes to the previous image" />
+      </button>
+      <button class="carouselBtn next" data-carousel-button="next">
+        <img src="./Bilder/Homepage/arrow.right.svg" alt="Arrow on top of image that goes to the next image" />
+      </button>
+      <ul data-slides>
+        <li class="slide" data-active>
+          <img src="./Bilder/Homepage/Carousel pic 1.jpg"
+            alt="Picture of 4 sushi rolls in a line with jalapenos on top" />
+        </li>
+        <li class="slide">
+          <img src="./Bilder/Homepage/Carousel pic 2.jpg"
+            alt="Picture of a pair of chopsticks picking up a maki with cream cheese and some sauce on top." />
+        </li>
+        <li class="slide">
+          <img src="./Bilder/Homepage/Carousel pic 3.jpg"
+            alt="Picture of 2 rice onigiri. One plain and one with some flavour added" />
+        </li>
+        <li class="slide">
+          <img src="./Bilder/Homepage/Carousel pic 4.jpg"
+            alt="Picture of 3 prawn nagiri on top of some bamboo leaves" />
+        </li>
+        <li class="slide">
+          <img src="./Bilder/Homepage/carousel pic 5.jpg" alt="A picture of 8 maki with some white sauce on top" />
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="manifesto">
+    <div class="manifestoMargin">
+      <div class="manifestoContainer" id="scrollto">
+        <div class="manifestoSection">
+          <h2>Our Manifesto</h2>
+          <div class="lineBreak"></div>
+          <p>
+            Welcome to our sushi haven, where artistry meets flavor in every
+            roll. Embark on a culinary journey crafted with precision and
+            passion, as we blend tradition with innovation.<br /><br />
+            Our commitment to fresh, quality ingredients ensures an
+            unforgettable dining experience, inviting you to savor the essence
+            of Japanese culinary mastery.
+          </p>
+        </div>
+        <div class="manifestoImgSection">
+          <img src="./Bilder/Homepage/Manifesto pic.jpg" alt="Pic of our Chef making some delicious food" />
         </div>
       </div>
     </div>
-  </body>
+  </section>
+  <div class="section2Container">
+    <div class="openingTimeSection2">
+      <h2>Opening Times</h2>
+      <ul>
+        <li>Monday - Friday: 14:00 - 23:00</li>
+        <br />
+        <li>Saturday: 16:00 - 00:00</li>
+        <br />
+        <li>Sunday: 15:00 - 23:00</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="marginFooter">
+      <div class="footerContainer">
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1971.24918392395!2d5.32677847718264!3d60.39156207514606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x463cfea8dfd8da5f%3A0x5e8fbdd1a28aa478!2sKaigaten%204%2C%205016%20Bergen!5e0!3m2!1sen!2sno!4v1701339408443!5m2!1sen!2sno"
+            width="600px" height="450px" style="border: 0" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="textInfo">
+          <p>Where to find us:</p>
+          <p>Kaigaten 4</p>
+          <p>5016 Bergen</p>
+          <br />
+          <p>Tel 989 44 231</p>
+          <p>Email: booking@oishii.com</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>
