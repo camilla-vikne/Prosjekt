@@ -299,6 +299,7 @@ button {
   font-family: "Josefin Sans", sans-serif;
   border: none;
   text-align: center;
+  cursor: pointer;
 }
 button:hover {
   background-color: #f53726;

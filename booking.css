@@ -362,6 +362,7 @@ select {
   font-size: 18px;
   font-family: "Josefin Sans", sans-serif;
   border: none;
+  cursor: pointer;
 }
 .submit:hover {
   background-color: #f53726;
@@ -546,7 +547,7 @@ img {
   .spacer {
     height: 0.188rem;
     width: 12.5rem;
-    margin-top:6rem;
+    margin-top: 6rem;
   }
   .container-right {
     grid-area: right;
