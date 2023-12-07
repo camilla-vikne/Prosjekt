@@ -1,20 +1,29 @@
-<h2>Welcome to Oishii!</h2>
+<h2>🍣Welcome to Oishii!🍣</h2>
+<br>
 
-<h3>This was our first group project at Kodehode, and we're very happy with how our website turned out!
+<p>This was our first group project at Kodehode, and we're very happy with how our website turned out!
 During these two weeks we're learned a lot about planning out our work, cooperating within a team and lots and lots of new snippets of code. 
 It's been a great experience!
+<br>
+<br>
 
-The Figma file can be found <a href="https://www.figma.com/file/c1bC7AXSus1ngLlzusfHKf/Untitled?type=design&node-id=23%3A40&mode=design&t=QNhrb3J2mFjiNvAO-1"> here! </a>
-Our log is up <a href="https://docs.google.com/document/d/1do5jnazj7BKZ2q63Nx1-v2sM2_A4Th1k_B-6cuEb7lQ/edit?usp=sharing"> here!</a>
+The Figma file can be found <a href="https://www.figma.com/file/c1bC7AXSus1ngLlzusfHKf/Untitled?type=design&node-id=23%3A40&mode=design&t=QNhrb3J2mFjiNvAO-1"> here,  </a>
+and our log is up <a href="https://docs.google.com/document/d/1do5jnazj7BKZ2q63Nx1-v2sM2_A4Th1k_B-6cuEb7lQ/edit?usp=sharing"> here!</a> 
+<br>
+<br>
 
 
-We hope you like our project!</h3>
+We hope you like our project!</p>
+
+<br>
 
 <i>Andreas, Kristian and Camilla
+<br>
 Kodehode B09</i>
+<br>
+<br>
 
-
-// Prosjekt 1: Restauranten
+//Prosjekt 1: Restauranten
 Modul B Gruppeprosjekt
 27.11.23 - 08.12.23
 
