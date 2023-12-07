@@ -53,5 +53,5 @@ function scrollArrow() {
 }
 
 function scrollDown() {
-  manifesto.scrollIntoView({ behavior: "smooth" });
+  window.scrollTo({ top: 1950, behavior: "smooth" });
 }
