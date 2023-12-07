@@ -7,7 +7,7 @@ It's been a great experience!
 <br>
 <br>
 
-The Figma file can be found <a href="https://www.figma.com/file/c1bC7AXSus1ngLlzusfHKf/Untitled?type=design&node-id=23%3A40&mode=design&t=QNhrb3J2mFjiNvAO-1"> here,  </a>
+The Figma file can be found <a href="https://www.figma.com/file/c1bC7AXSus1ngLlzusfHKf/Untitled?type=design&node-id=23%3A40&mode=design&t=QNhrb3J2mFjiNvAO-1"> here,</a> 
 and our log is up <a href="https://docs.google.com/document/d/1do5jnazj7BKZ2q63Nx1-v2sM2_A4Th1k_B-6cuEb7lQ/edit?usp=sharing"> here!</a> 
 <br>
 <br>
