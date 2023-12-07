@@ -1,11 +1,17 @@
-This was our first group project at Kodehode, and we're very happy with how our website turned out!
+<h2>Welcome to Oishii!</h2>
+
+<h3>This was our first group project at Kodehode, and we're very happy with how our website turned out!
 During these two weeks we're learned a lot about planning out our work, cooperating within a team and lots and lots of new snippets of code. 
 It's been a great experience!
 
-We hope you like our project!
+The Figma file can be found at https://www.figma.com/file/c1bC7AXSus1ngLlzusfHKf/Untitled?type=design&node-id=23%3A40&mode=design&t=QNhrb3J2mFjiNvAO-1
+Our log is up at https://docs.google.com/document/d/1do5jnazj7BKZ2q63Nx1-v2sM2_A4Th1k_B-6cuEb7lQ/edit?usp=sharing
 
-Andreas, Kristian and Camilla
-Kodehode B09
+
+We hope you like our project!</h3>
+
+<i>Andreas, Kristian and Camilla
+Kodehode B09</i>
 
 
 // Prosjekt 1: Restauranten
