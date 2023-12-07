@@ -138,6 +138,7 @@ nav a:hover::before {
   border: none;
   font-size: 20px;
   cursor: pointer;
+  color: black;
 }
 
 .headerBtn #menuBtn {
