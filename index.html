@@ -33,13 +33,13 @@
             alt="Two chopsticks grabbing a sushi roll"
             class="logo"
           />
-          <h1>Oishii</h1>
+          <h1 onclick="scrollToTop()">Oishii</h1>
         </div>
         <nav>
           <ul>
             <li><a href="./index.html">Home</a></li>
             <li><a href="./menu.html">Our menu</a></li>
-            <li><a onclick="scrollDown()" href="#">About us</a></li>
+            <li id="aboutUs"><a href="javascript:scrollDown()">About us</a></li>
             <li><a href="./booking.html">Booking</a></li>
           </ul>
         </nav>
@@ -54,7 +54,9 @@
             <ul>
               <li><a href="./index.html">Home</a></li>
               <li><a href="./menu.html">Our menu</a></li>
-              <li><a onclick="scrollDown()" href="#">About us</a></li>
+              <li id="aboutUs">
+                <a href="javascript:scrollDown()">About us</a>
+              </li>
               <li><a href="./booking.html">Booking</a></li>
             </ul>
           </aside>
@@ -171,6 +173,7 @@
         </ul>
       </div>
     </section>
+    <div class="scrolltoAbout"></div>
     <div id="scrollto"></div>
     <section class="manifesto">
       <div class="manifestoMargin">

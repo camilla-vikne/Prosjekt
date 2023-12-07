@@ -45,6 +45,7 @@ header {
   margin: 0;
   height: 79px;
   line-height: 79px;
+  cursor: pointer;
 }
 
 .logo {

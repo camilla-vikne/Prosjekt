@@ -46,12 +46,16 @@ buttons.forEach((button) => {
 
 // Scroll buttons
 
-const manifesto = document.getElementById("manifestoH2");
+const manifesto = document.getElementById("scrollto");
 
 function scrollArrow() {
   window.scrollTo({ top: 500, behavior: "smooth" });
 }
 
 function scrollDown() {
-  window.scrollTo({ top: 1950, behavior: "smooth" });
+  manifesto.scrollIntoView({ behavior: "smooth" });
+}
+
+function scrollToTop() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
 }
